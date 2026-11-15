@@ -1,44 +1,67 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='none' stroke='%235E0ED7' stroke-width='2.5'/><circle cx='16' cy='16' r='5' fill='%235E0ED7'/></svg>" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='none' stroke='%23EA1D2C' stroke-width='2.5'/><circle cx='16' cy='16' r='5' fill='%23EA1D2C'/></svg>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bruna Kury — Vibe Coding & AI Systems Portfolio</title>
-    <meta name="description" content="Portfolio de Bruna Kury. Projetos de Vibe Coding, Inteligência Artificial, Generative UI e Sistemas Autônomos." />
+    
+    <!-- Título Estratégico & ATS Match -->
+    <title>Bruna Kury — AI Builder & Data Science | GenAI, Automações & Vibe Coding</title>
+    
+    <!-- Meta tags para ATS e Recrutadores -->
+    <meta name="description" content="Portfólio de Bruna Kury para a Trilha AI Builder (GenAI iFood). Soluções de ponta a ponta construídas com IA: copilotos de negócios, dashboards executivos (96k pedidos), ferramentas internas deployadas e automações com n8n." />
+    <meta name="keywords" content="Bruna Kury, AI Builder, GenAI iFood, Vibe Coding, Engenharia de Prompt, n8n, Make, Automações, Orquestração de Agentes, Claude, Gemini, ChatGPT, Ciência de Dados, Design Gráfico, Dashboards, Recharts, React, WCAG, Logística, Cardápio Copiloto, Vértice" />
+    <meta name="author" content="Bruna Kury" />
+
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bruna Kury — AI Builder & Data Science | Portfólio GenAI" />
+    <meta property="og:description" content="Apresentação de projetos para a Trilha AI Builder (iFood GenAI). Ferramentas reais deployadas, copilotos com LLM, dashboards operacionais e fluxos no n8n." />
     
     <!-- Google Fonts: Inter, Newsreader & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
-    <!-- Tailwind CDN -->
+    <!-- Tailwind CDN com tokens refinados -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
+              ifood: '#EA1D2C',
+              'ifood-dark': '#B80010',
               accent: '#5E0ED7',
               'accent-hover': '#4D0AB5',
               'accent-soft': '#F1E9FF',
-              ink: '#000000',
-              'ink-soft': '#4A4A4F',
-              'ink-muted': '#8E8E93',
+              ink: '#0A0A0B',
+              'ink-soft': '#3F3F46',
+              'ink-muted': '#71717A',
               paper: '#FAF9F6',
-              'paper-deep': '#F1EFEA',
+              'paper-deep': '#F4F2EC',
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
               serif: ['Newsreader', 'Georgia', 'serif'],
-              mono: ['"JetBrains Mono"', 'monospace'],
+              mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
             }
           }
         }
       }
     </script>
+    <style>
+      /* Custom selection & utility */
+      ::selection {
+        background-color: #EA1D2C;
+        color: #ffffff;
+      }
+      .font-tabular {
+        font-variant-numeric: tabular-nums;
+      }
+    </style>
   </head>
-  <body class="bg-[#FAF9F6] text-[#000000] antialiased selection:bg-[#5E0ED7] selection:text-white">
+  <body class="bg-[#FAF9F6] text-[#0A0A0B] antialiased selection:bg-[#EA1D2C] selection:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -1,68 +1,3958 @@
-<!doctype html>
-<html lang="pt-BR" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='none' stroke='%23EA1D2C' stroke-width='2.5'/><circle cx='16' cy='16' r='5' fill='%23EA1D2C'/></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Título Estratégico & ATS Match -->
-    <title>Bruna Kury — AI Builder & Data Science | GenAI, Automações & Vibe Coding</title>
-    
-    <!-- Meta tags para ATS e Recrutadores -->
-    <meta name="description" content="Portfólio de Bruna Kury para a Trilha AI Builder (GenAI iFood). Soluções de ponta a ponta construídas com IA: copilotos de negócios, dashboards executivos (96k pedidos), ferramentas internas deployadas e automações com n8n." />
-    <meta name="keywords" content="Bruna Kury, AI Builder, GenAI iFood, Vibe Coding, Engenharia de Prompt, n8n, Make, Automações, Orquestração de Agentes, Claude, Gemini, ChatGPT, Ciência de Dados, Design Gráfico, Dashboards, Recharts, React, WCAG, Logística, Cardápio Copiloto, Vértice" />
-    <meta name="author" content="Bruna Kury" />
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bruna Kury — AI Builder | Ciência de Dados, Design e IA Generativa</title>
+  <meta name="description" content="Portfólio de Bruna Kury, estudante de Ciência de Dados e designer. Dashboards com IA, copilotos de IA generativa, ferramentas web publicadas e automação com n8n.">
+  <meta name="author" content="Bruna Kury">
+  <meta property="og:title" content="Bruna Kury — AI Builder | Ciência de Dados, Design e IA Generativa">
+  <meta property="og:description" content="Portfólio de Bruna Kury, estudante de Ciência de Dados e designer. Dashboards com IA, copilotos de IA generativa, ferramentas web publicadas e automação com n8n.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c1c1e'/%3E%3Ctext x='16' y='21' fill='%23ededeb' font-family='sans-serif' font-weight='700' font-size='13' text-anchor='middle'%3EBK%3C/text%3E%3C/svg%3E">
 
-    <!-- Open Graph / Redes Sociais -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Bruna Kury — AI Builder & Data Science | Portfólio GenAI" />
-    <meta property="og:description" content="Apresentação de projetos para a Trilha AI Builder (iFood GenAI). Ferramentas reais deployadas, copilotos com LLM, dashboards operacionais e fluxos no n8n." />
+  <!-- Self-hosted and Google Fonts fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Alte Haas Grotesk';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Alte Haas Grotesk'),
+           local('AlteHaasGroteskRegular'),
+           url('./fonts/AlteHaasGroteskRegular.woff') format('woff'),
+           url('https://fonts.cdnfonts.com/s/8581/AlteHaasGroteskRegular.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'Alte Haas Grotesk';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local('Alte Haas Grotesk Bold'),
+           local('AlteHaasGroteskBold'),
+           url('./fonts/AlteHaasGroteskBold.woff') format('woff'),
+           url('https://fonts.cdnfonts.com/s/8581/AlteHaasGroteskBold.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Geist';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url('https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Newsreader';
+      font-style: normal;
+      font-weight: 300 500;
+      font-display: swap;
+      src: url('https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK4397yjA.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Newsreader';
+      font-style: italic;
+      font-weight: 300 500;
+      font-display: swap;
+      src: url('https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCjohC.woff2') format('woff2');
+    }
+
+    :root {
+      --bg: #0c0c0d;
+      --ink: #ededeb;
+      --mute: #8a8a88;
+      --pill: #1c1c1e;
+      --pill-h: #262628;
+      --line: #232325;
+      --ease-house: cubic-bezier(.16, 1, .3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      overscroll-behavior: none;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Geist', ui-sans-serif, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--ink);
+      outline-offset: 2px;
+    }
+    :focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    /* Indexable layer */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      border: 0;
+    }
+
+    /* Views container */
+    .view-container {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      background: var(--bg);
+    }
+    .view-container.active {
+      pointer-events: auto;
+    }
+    .view-canvas-wrap {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .view-canvas-wrap canvas {
+      display: block;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    /* Floating Dock */
+    #dock {
+      position: fixed;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: max-content;
+      padding: 5px;
+      gap: 4px;
+      border-radius: 12px;
+      background: rgba(28, 28, 30, 0.66);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .dock-wordmark {
+      font-family: 'Geist', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: -0.02em;
+      padding: 6px 10px 6px 8px;
+      color: var(--ink);
+      text-decoration: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .dock-divider {
+      width: 1px;
+      height: 18px;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 0 4px;
+      flex-shrink: 0;
+    }
+
+    .dock-tab {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      padding: 0 9px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--ink);
+      background: transparent;
+      border: none;
+      transition: background 0.2s var(--ease-house);
+    }
+    .dock-tab:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .dock-tab.active {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .dock-tab-label {
+      font-family: 'Newsreader', ui-serif, Georgia, serif;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      display: inline-block;
+      margin-right: 0;
+      transition: max-width 0.7s var(--ease-house), margin-right 0.7s var(--ease-house), opacity 0.4s var(--ease-house);
+    }
+    .dock-tab.active .dock-tab-label {
+      max-width: 120px;
+      opacity: 1;
+      margin-right: 3px;
+    }
+
+    .dock-tab-num {
+      font-family: 'Geist', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      transform: translateY(-1px);
+      transition: transform 0.7s var(--ease-house), font-size 0.7s var(--ease-house);
+      display: inline-block;
+    }
+    .dock-tab.active .dock-tab-num {
+      font-size: 10px;
+      transform: translateY(-6px);
+    }
+
+    .dock-menu-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+    }
+    .dock-menu-btn:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .dock-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--ink);
+      transition: transform 0.5s var(--ease-house);
+    }
+    .dock-menu-btn.open .dock-dot {
+      transform: scale(2.2);
+    }
+
+    #dock-menu-panel {
+      position: fixed;
+      bottom: 66px;
+      left: 50%;
+      margin-left: -110px;
+      width: 220px;
+      padding: 14px;
+      border-radius: 8px;
+      background: rgba(22, 22, 24, 0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--line);
+      z-index: 49;
+      transform-origin: bottom center;
+      box-sizing: border-box;
+      transform: translateY(6px) scale(0.98);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s var(--ease-house), transform 0.5s var(--ease-house);
+    }
+    #dock-menu-panel.open {
+      transform: none;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .menu-notice {
+      font-size: 12px;
+      color: var(--mute);
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    .menu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      text-decoration: none;
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .menu-row:hover .menu-row-label {
+      opacity: 0.7;
+    }
+    .menu-row-label {
+      font-family: 'Newsreader', ui-serif, Georgia, serif;
+      font-size: 17px;
+    }
+    .menu-row-num {
+      font-family: 'Geist', sans-serif;
+      font-size: 11px;
+      color: var(--mute);
+    }
+    .menu-divider {
+      height: 1px;
+      background: var(--line);
+    }
+
+    /* Gallery Overlays */
+    #gallery-intro-overlay {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 20;
+    }
+    .intro-wordmark {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 90px;
+      opacity: 0;
+    }
+    .intro-wordmark canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .intro-side-label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Alte Haas Grotesk', 'Geist', sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      color: var(--ink);
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .gallery-brand {
+      position: absolute;
+      top: 28px;
+      left: 32px;
+      right: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Alte Haas Grotesk', 'Geist', sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      color: rgba(237, 237, 235, 0.75);
+      pointer-events: none;
+      z-index: 10;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+    .gallery-brand-name {
+      font-weight: 700;
+      color: #ededeb;
+      letter-spacing: 0.05em;
+    }
+    .gallery-brand-role {
+      font-weight: 400;
+      color: #8a8a88;
+    }
+    @media (max-width: 640px) {
+      .gallery-brand {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        font-size: 11px;
+      }
+    }
+    .intro-side-label.left {
+      left: 9%;
+    }
+    .intro-side-label.right {
+      right: 9%;
+    }
+    .intro-side-label span {
+      display: inline-block;
+      transform: translateY(100%);
+    }
+    @media (max-width: 1024px) {
+      .intro-side-label { display: none !important; }
+    }
+
+    .intro-counter {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100%);
+      font-family: 'Newsreader', ui-serif, Georgia, serif;
+      font-size: 14px;
+      color: var(--ink);
+      opacity: 0;
+    }
+
+    #gallery-caption {
+      position: absolute;
+      bottom: 64px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      pointer-events: none;
+      z-index: 25;
+      overflow: hidden;
+      height: 28px;
+    }
+    .gallery-caption-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transform: translateY(110%);
+    }
+    .gallery-caption-title {
+      font-family: 'Geist', sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      color: var(--ink);
+    }
+    .gallery-caption-cat {
+      font-family: 'Newsreader', ui-serif, Georgia, serif;
+      font-size: 14px;
+      color: var(--mute);
+    }
+
+    #gallery-hint {
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 0.24em;
+      color: var(--mute);
+      pointer-events: none;
+      opacity: 0;
+      z-index: 22;
+      text-transform: uppercase;
+    }
+
+    #cursor-label {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 4px 8px;
+      border-radius: 4px;
+      background: rgba(237, 237, 235, 0.92);
+      color: #0c0c0d;
+      font-family: 'Geist', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      pointer-events: none;
+      z-index: 60;
+      transform: scale(0.6);
+      opacity: 0;
+      transform-origin: center center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Gallery Overview Modal */
+    #gallery-overview {
+      position: absolute;
+      bottom: 78px;
+      left: 50%;
+      transform: translateX(-50%) translateY(16px);
+      width: calc(100% - 32px);
+      max-width: 600px;
+      background: rgba(22, 22, 24, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 22px 24px;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 35;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    }
+    .overview-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+    .overview-title-group {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .overview-title {
+      font-family: 'Geist', sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--ink);
+    }
+    .overview-cat {
+      font-family: 'Newsreader', ui-serif, Georgia, serif;
+      font-size: 15px;
+      color: var(--mute);
+    }
+    .overview-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .pill-btn {
+      display: inline-flex;
+      align-items: center;
+      height: 26px;
+      padding: 0 12px;
+      border-radius: 13px;
+      background: var(--pill);
+      color: var(--ink);
+      font-family: 'Geist', sans-serif;
+      font-size: 12px;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      transition: background 0.2s var(--ease-house);
+    }
+    .pill-btn:hover {
+      background: var(--pill-h);
+    }
+    .overview-desc {
+      font-family: 'Newsreader', ui-serif, Georgia, serif;
+      font-size: 17px;
+      line-height: 1.35;
+      color: #cfcfcc;
+      max-width: 54ch;
+      margin-bottom: 18px;
+    }
+    .overview-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .overview-tag {
+      font-size: 11px;
+      background: var(--pill);
+      color: var(--mute);
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    /* Projects Hover Bubble */
+    #projects-ver-bubble {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: rgba(237, 237, 235, 0.94);
+      color: #0c0c0d;
+      font-family: 'Newsreader', ui-serif, Georgia, serif;
+      font-style: italic;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      z-index: 60;
+      transform: translate(-50%, -50%) scale(0.6);
+      opacity: 0;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    /* Projects Lightbox */
+    #projects-lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(8, 8, 9, 0.86);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 70;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.45s var(--ease-house);
+    }
+    #projects-lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .lightbox-modal {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transform: scale(0.94) translateY(20px);
+      transition: transform 0.9s cubic-bezier(.16, 1, .3, 1);
+    }
+    #projects-lightbox.open .lightbox-modal {
+      transform: scale(1) translateY(0);
+    }
+    .lightbox-media-wrap {
+      width: 100%;
+      max-height: 70vh;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox-media-wrap video, .lightbox-media-wrap canvas, .lightbox-media-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+    .lightbox-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .lightbox-info {
+      flex: 1;
+      min-width: 280px;
+    }
+    .lightbox-title-line {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+    .lightbox-title {
+      font-family: 'Geist', sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--ink);
+    }
+    .lightbox-deploy {
+      font-family: 'Newsreader', ui-serif, Georgia, serif;
+      font-size: 15px;
+      color: var(--mute);
+    }
+    .lightbox-desc {
+      font-family: 'Newsreader', ui-serif, Georgia, serif;
+      font-size: 17px;
+      line-height: 1.4;
+      color: #cfcfcc;
+      max-width: 60ch;
+    }
+    .lightbox-btns {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* About View Hint */
+    #about-hint {
+      position: absolute;
+      bottom: 78px;
+      left: 50%;
+      transform: translateX(-50%) translateX(-8px);
+      font-family: 'Geist', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      color: var(--mute);
+      pointer-events: none;
+      z-index: 22;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-transform: uppercase;
+    }
+    .about-hint-arrow {
+      display: inline-block;
+      animation: nudgeArrow 1.6s infinite ease-in-out;
+    }
+    @keyframes nudgeArrow {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(5px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+
+  <!-- GSAP 3.12.5 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Import Map for Three.js 0.160.0 -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Indexable semantic layer (sr-only) -->
+  <main class="sr-only">
+    <h1>Bruna Kury — AI Builder: Ciência de Dados, Design e IA Generativa</h1>
     
-    <!-- Google Fonts: Inter, Newsreader & JetBrains Mono -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <section>
+      <h2>Perfil</h2>
+      <p>Estudante de Ciência de Dados e designer. Uso IA generativa como alavanca para construir dashboards, copilotos, ferramentas web publicadas e automações de ponta a ponta. Portfólio demonstrativo de estudos e projetos.</p>
+    </section>
+
+    <section>
+      <h2>Projetos</h2>
+      
+      <article>
+        <h3>Vértice</h3>
+        <p>Dashboard & IA, Vercel</p>
+        <p>Cockpit executivo de logística e e-commerce sobre 96.478 pedidos e 27 UFs, com KPIs, simulador de Centro de Distribuição e diagnóstico por IA generativa (Gemini) com fallback local.</p>
+        <p><a href="https://vertice-lemon.vercel.app/" rel="noopener" tabindex="-1">https://vertice-lemon.vercel.app/</a></p>
+        <ul>
+          <li>React 18, Vite 5, Tailwind CSS 3, Recharts 2 e Lucide React.</li>
+          <li>Cockpit de indicadores logísticos com 96.478 pedidos, R$ 13,22 milhões de GMV e 27 UFs (lead time, taxa de atraso de SLA, nota média e taxa de recompra). 4 KPIs de decisão recalculados por filtro de UF.</li>
+          <li>Diagnóstico executivo por IA generativa (Google Gemini) em 3 tópicos acionáveis, com fallback heurístico local quando não há chave de API ou a rede falha.</li>
+          <li>Simulador de Centro de Distribuição regional com sliders de lead time e atraso, recalculando pedidos, nota, retenção e GMV.</li>
+          <li>Módulos de cenários de elasticidade, matriz de riscos, planejamento em Gantt, copiloto estratégico e Executive Brief exportável em PDF.</li>
+          <li>Repositório sem segredos: chaves fora do código e do Git.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Cardápio Copiloto</h3>
+        <p>IA Generativa, Vercel</p>
+        <p>Copiloto que lê o cardápio (foto, PDF ou texto), sugere preço, descrição, nome e combo e simula o ticket médio em tempo real. Gemini opcional por proxy serverless.</p>
+        <p><a href="https://cardapio-copiloto.vercel.app/" rel="noopener" tabindex="-1">https://cardapio-copiloto.vercel.app/</a></p>
+        <ul>
+          <li>React (Vite), Recharts e CSS próprio.</li>
+          <li>Entrada do cardápio por foto, PDF ou texto, lida no navegador com Tesseract.js (OCR) e pdf.js, sem custo e sem chave de API.</li>
+          <li>Sugestões de preço (com nível de risco), descrição em quatro tons, nome e combos montados com os itens do próprio cardápio, cada uma com justificativa.</li>
+          <li>Simulação do ticket médio ao vivo, indicador "Potencial explorado" de 0 a 100, projeção de 90 dias e relatório em PDF gerado no navegador.</li>
+          <li>Copiloto conversacional em painel lateral que também aceita sugestões pela conversa.</li>
+          <li>IA opcional com Google Gemini por API serverless na Vercel usada como proxy, com limite de tamanho e formato de arquivo, limite de 8 requisições por minuto por IP, chave apenas em variável de ambiente e retorno automático à leitura local.</li>
+          <li>Acessibilidade WCAG 2.1 AA. As projeções são simulações educativas.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>UrbanPulse</h3>
+        <p>Geodados & IA, Vercel</p>
+        <p>Hub de inteligência territorial: mapa interativo, simulador de raio de atendimento de 1 a 10 km, índice de vulnerabilidade social e copiloto de IA generativa. Exporta PDF e CSV.</p>
+        <p><a href="https://urban-pulse-tawny.vercel.app/#/" rel="noopener" tabindex="-1">https://urban-pulse-tawny.vercel.app/#/</a></p>
+        <ul>
+          <li>React, Vite, Leaflet e React-Leaflet, OpenStreetMap, Tailwind CSS, Lucide e Recharts.</li>
+          <li>Cruza densidade demográfica, renda média, cobertura de transporte público e Índice de Vulnerabilidade Social (IVS).</li>
+          <li>Simulador what-if de raio de atendimento de 1 a 10 km, com recálculo de população impactada, IVS e cobertura.</li>
+          <li>Copiloto de IA generativa (UrbanPulse AI) que sintetiza evidências territoriais em linguagem natural.</li>
+          <li>Tabela territorial acessível em HTML semântico, com suporte a leitores de tela e teclado, contraste acima de 4,5:1 e WCAG 2.1 AA.</li>
+          <li>Exportação de cenários em PDF e CSV. Desenvolvido com vibe coding e engenharia de prompt.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Fluxo n8n de Vibe Coding</h3>
+        <p>Automação & Prompts, n8n</p>
+        <p>Fluxo de automação no n8n que transforma uma ideia em um prompt otimizado para vibe coding. Foi usado para criar o prompt-base deste portfólio.</p>
+        <ul>
+          <li>Fluxo de automação no n8n para vibe coding, com criação otimizada de prompts (engenharia de prompt).</li>
+          <li>Usado para criar o prompt-base deste portfólio.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>EdUENF Agroecologia</h3>
+        <p>Ferramenta interna, Render</p>
+        <p>Site público e painel interno de gestão editorial, com backend próprio em Node e Express, login seguro e sincronização com a planilha do Google Forms.</p>
+        <p><a href="https://apoio-eduenf-agroecologia.onrender.com/" rel="noopener" tabindex="-1">https://apoio-eduenf-agroecologia.onrender.com/</a></p>
+        <ul>
+          <li>Front-end em React e Vite e backend próprio em Node.js e Express, com site público e painel interno de gestão editorial de pedidos.</li>
+          <li>Autenticação com senhas em bcrypt, sessão em cookie httpOnly com SameSite Strict, rotas de dados protegidas, perfil de administrador e limite de 10 tentativas de login em 15 minutos.</li>
+          <li>Sincroniza as respostas do Google Forms por planilha (CSV publicado ou arquivo), preservando status, responsável, horas e anotações.</li>
+          <li>Publicado no Render, com Node em produção e disco persistente para os dados.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Competências</h2>
+      <ul>
+        <li>Engenharia de prompt</li>
+        <li>Vibe coding</li>
+        <li>Automação de fluxos com n8n</li>
+        <li>IA generativa</li>
+        <li>Google Gemini API</li>
+        <li>Análise de dados com IA</li>
+        <li>Dashboards e visualização de dados</li>
+        <li>Desenvolvimento de APIs (proxy serverless e Node com Express)</li>
+        <li>React</li>
+        <li>Vite</li>
+        <li>Tailwind CSS</li>
+        <li>Recharts</li>
+        <li>Leaflet</li>
+        <li>Node.js</li>
+        <li>Publicação em Vercel e Render</li>
+        <li>Acessibilidade WCAG 2.1 AA</li>
+        <li>Design e design de interfaces</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formação</h2>
+      <p>Ciência de Dados (estudante)</p>
+      <p>Design (formada)</p>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <p><a href="https://www.linkedin.com/in/bruna-kury/" rel="me noopener">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <noscript>
+    <div style="padding: 30px; max-width: 700px; margin: 0 auto; color: #ededeb; font-family: sans-serif; line-height: 1.6;">
+      <h1>Bruna Kury — AI Builder: Ciência de Dados, Design e IA Generativa</h1>
+      <p>Estudante de Ciência de Dados e designer. Uso IA generativa como alavanca para construir dashboards, copilotos, ferramentas web publicadas e automações de ponta a ponta. Portfólio demonstrativo de estudos e projetos.</p>
+      <h2>Projetos</h2>
+      <ul>
+        <li><strong>Vértice</strong> (Dashboard & IA, Vercel) — <a href="https://vertice-lemon.vercel.app/" style="color:#ededeb;">https://vertice-lemon.vercel.app/</a></li>
+        <li><strong>Cardápio Copiloto</strong> (IA Generativa, Vercel) — <a href="https://cardapio-copiloto.vercel.app/" style="color:#ededeb;">https://cardapio-copiloto.vercel.app/</a></li>
+        <li><strong>UrbanPulse</strong> (Geodados & IA, Vercel) — <a href="https://urban-pulse-tawny.vercel.app/#/" style="color:#ededeb;">https://urban-pulse-tawny.vercel.app/#/</a></li>
+        <li><strong>Fluxo n8n de Vibe Coding</strong> (Automação & Prompts, n8n)</li>
+        <li><strong>EdUENF Agroecologia</strong> (Ferramenta interna, Render) — <a href="https://apoio-eduenf-agroecologia.onrender.com/" style="color:#ededeb;">https://apoio-eduenf-agroecologia.onrender.com/</a></li>
+      </ul>
+      <h2>Contato</h2>
+      <p><a href="https://www.linkedin.com/in/bruna-kury/" style="color:#ededeb;">LinkedIn</a></p>
+    </div>
+  </noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bruna Kury",
+    "description": "Estudante de Ciência de Dados e designer. Uso IA generativa como alavanca para construir dashboards, copilotos, ferramentas web publicadas e automações de ponta a ponta. Portfólio demonstrativo de estudos e projetos.",
+    "sameAs": [
+      "https://www.linkedin.com/in/bruna-kury/"
+    ],
+    "knowsAbout": [
+      "Engenharia de prompt",
+      "Vibe coding",
+      "Automação de fluxos com n8n",
+      "IA generativa",
+      "Google Gemini API",
+      "Análise de dados com IA",
+      "Dashboards e visualização de dados",
+      "Desenvolvimento de APIs (proxy serverless e Node com Express)",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Recharts",
+      "Leaflet",
+      "Node.js",
+      "Publicação em Vercel e Render",
+      "Acessibilidade WCAG 2.1 AA",
+      "Design e design de interfaces"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "AI Builder"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "CreativeWork",
+          "position": 1,
+          "name": "Vértice",
+          "description": "Cockpit executivo de logística e e-commerce sobre 96.478 pedidos e 27 UFs, com KPIs, simulador de Centro de Distribuição e diagnóstico por IA generativa (Gemini) com fallback local.",
+          "url": "https://vertice-lemon.vercel.app/"
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 2,
+          "name": "Cardápio Copiloto",
+          "description": "Copiloto que lê o cardápio (foto, PDF ou texto), sugere preço, descrição, nome e combo e simula o ticket médio em tempo real. Gemini opcional por proxy serverless.",
+          "url": "https://cardapio-copiloto.vercel.app/"
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 3,
+          "name": "UrbanPulse",
+          "description": "Hub de inteligência territorial: mapa interativo, simulador de raio de atendimento de 1 a 10 km, índice de vulnerabilidade social e copiloto de IA generativa. Exporta PDF e CSV.",
+          "url": "https://urban-pulse-tawny.vercel.app/#/"
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 4,
+          "name": "Fluxo n8n de Vibe Coding",
+          "description": "Fluxo de automação no n8n que transforma uma ideia em um prompt otimizado para vibe coding. Foi usado para criar o prompt-base deste portfólio."
+        },
+        {
+          "@type": "CreativeWork",
+          "position": 5,
+          "name": "EdUENF Agroecologia",
+          "description": "Site público e painel interno de gestão editorial, com backend próprio em Node e Express, login seguro e sincronização com a planilha do Google Forms.",
+          "url": "https://apoio-eduenf-agroecologia.onrender.com/"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- View 1: Gallery -->
+  <section id="view-gallery" class="view-container" aria-hidden="true">
+    <div class="view-canvas-wrap" id="gallery-canvas-wrap"></div>
     
-    <!-- Tailwind CDN com tokens refinados -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              ifood: '#EA1D2C',
-              'ifood-dark': '#B80010',
-              accent: '#5E0ED7',
-              'accent-hover': '#4D0AB5',
-              'accent-soft': '#F1E9FF',
-              ink: '#0A0A0B',
-              'ink-soft': '#3F3F46',
-              'ink-muted': '#71717A',
-              paper: '#FAF9F6',
-              'paper-deep': '#F4F2EC',
-            },
-            fontFamily: {
-              sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-              serif: ['Newsreader', 'Georgia', 'serif'],
-              mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+    <div class="gallery-brand" id="gallery-brand">
+      <span class="gallery-brand-name">Bruna Kury</span>
+      <span class="gallery-brand-role">AI Builder · Dados e Design</span>
+    </div>
+
+    <div id="gallery-intro-overlay">
+      <div class="intro-wordmark" id="gallery-wordmark">
+        <canvas id="gallery-wordmark-canvas" width="360" height="120"></canvas>
+      </div>
+      <div class="intro-side-label left" id="gallery-side-left">
+        <span>Bruna Kury</span>
+      </div>
+      <div class="intro-side-label right" id="gallery-side-right">
+        <span>AI Builder · Dados e Design</span>
+      </div>
+      <div class="intro-counter" id="gallery-counter">001</div>
+    </div>
+
+    <div id="gallery-caption">
+      <div class="gallery-caption-inner" id="gallery-caption-inner">
+        <span class="gallery-caption-title" id="gallery-caption-title"></span>
+        <span class="gallery-caption-cat" id="gallery-caption-cat"></span>
+      </div>
+    </div>
+
+    <div id="gallery-hint">ARRASTE PARA EXPLORAR</div>
+
+    <!-- Zoom Details Cursor -->
+    <div id="cursor-label">Detalhes</div>
+
+    <!-- Overview Panel -->
+    <div id="gallery-overview">
+      <div class="overview-head">
+        <div class="overview-title-group">
+          <div class="overview-title" id="overview-title"></div>
+          <div class="overview-cat" id="overview-cat"></div>
+        </div>
+        <div class="overview-actions">
+          <button class="pill-btn" id="overview-close-btn" type="button">Fechar</button>
+          <a class="pill-btn" id="overview-live-btn" target="_blank" rel="noopener" style="display: none;">Abrir projeto ↗</a>
+        </div>
+      </div>
+      <div class="overview-desc" id="overview-desc"></div>
+      <div class="overview-tags" id="overview-tags"></div>
+    </div>
+  </section>
+
+  <!-- View 2: Projects -->
+  <section id="view-projects" class="view-container" aria-hidden="true">
+    <div class="view-canvas-wrap" id="projects-canvas-wrap"></div>
+    
+    <!-- Follow bubble -->
+    <div id="projects-ver-bubble">Ver</div>
+
+    <!-- Lightbox Modal -->
+    <div id="projects-lightbox" role="dialog" aria-modal="true">
+      <div class="lightbox-modal">
+        <div class="lightbox-media-wrap" id="lightbox-media-container"></div>
+        <div class="lightbox-footer">
+          <div class="lightbox-info">
+            <div class="lightbox-title-line">
+              <span class="lightbox-title" id="lightbox-title"></span>
+              <span class="lightbox-deploy" id="lightbox-deploy"></span>
+            </div>
+            <div class="lightbox-desc" id="lightbox-desc"></div>
+          </div>
+          <div class="lightbox-btns">
+            <button class="pill-btn" id="lightbox-close-btn" type="button">Fechar</button>
+            <a class="pill-btn" id="lightbox-live-btn" target="_blank" rel="noopener" style="display: none;">Abrir projeto ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- View 3: About -->
+  <section id="view-about" class="view-container" aria-hidden="true">
+    <div class="view-canvas-wrap" id="about-canvas-wrap"></div>
+    <div id="about-hint">ROLE <span class="about-hint-arrow">→</span></div>
+  </section>
+
+  <!-- Dock Navbar -->
+  <nav aria-label="Principal" id="dock">
+    <a href="#gallery" class="dock-wordmark" id="dock-wordmark">B.KURY</a>
+    <div class="dock-divider"></div>
+    <a href="#gallery" class="dock-tab active" data-view="gallery" id="tab-gallery">
+      <span class="dock-tab-label">Galeria</span>
+      <span class="dock-tab-num">1</span>
+    </a>
+    <a href="#projects" class="dock-tab" data-view="projects" id="tab-projects">
+      <span class="dock-tab-label">Projetos</span>
+      <span class="dock-tab-num">2</span>
+    </a>
+    <a href="#about" class="dock-tab" data-view="about" id="tab-about">
+      <span class="dock-tab-label">Sobre</span>
+      <span class="dock-tab-num">3</span>
+    </a>
+    <div class="dock-divider"></div>
+    <button class="dock-menu-btn" id="dock-menu-btn" type="button" aria-label="Menu de navegação">
+      <div class="dock-dot"></div>
+    </button>
+  </nav>
+
+  <!-- Upward Opening Dock Menu Panel -->
+  <div id="dock-menu-panel">
+    <div class="menu-notice">Portfólio demonstrativo de estudos e projetos.</div>
+    <a href="#about" class="menu-row" data-route="about">
+      <span class="menu-row-label">Sobre</span>
+      <span class="menu-row-num">03</span>
+    </a>
+    <div class="menu-divider"></div>
+    <a href="#projects" class="menu-row" data-route="projects">
+      <span class="menu-row-label">Projetos</span>
+      <span class="menu-row-num">02</span>
+    </a>
+    <div class="menu-divider"></div>
+    <a href="#gallery" class="menu-row" data-route="gallery">
+      <span class="menu-row-label">Galeria</span>
+      <span class="menu-row-num">01</span>
+    </a>
+  </div>
+
+  <!-- Main Application Script -->
+  <script type="module">
+    import * as THREE from 'three';
+
+    /* ==========================================================================
+       0. Real Data Objects
+       ========================================================================== */
+    const PORTFOLIO_DATA = {
+      profile: {
+        name: 'Bruna Kury',
+        wordmark: 'B.KURY',
+        role: 'AI Builder · Dados & Design',
+        aboutHeadline: [
+          'Transformo dados, design e IA em',
+          'ferramentas reais, funcionais,',
+          'do protótipo ao deploy.'
+        ],
+        aboutSubline: 'Estudante de Ciência de Dados  ·  Designer',
+        linkedin: 'https://www.linkedin.com/in/bruna-kury/'
+      },
+      projects: [
+        {
+          id: 1,
+          slug: 'vertice',
+          title: 'Vértice',
+          category: 'Dashboard & IA',
+          deploy: 'Vercel',
+          url: 'https://vertice-lemon.vercel.app/',
+          desc: 'Cockpit executivo de logística e e-commerce sobre 96.478 pedidos e 27 UFs, com KPIs, simulador de Centro de Distribuição e diagnóstico por IA generativa (Gemini) com fallback local.',
+          tags: ['React + Vite', 'Gemini API', 'Recharts'],
+          video: './media/vertice.mp4',
+          poster: './media/vertice.png'
+        },
+        {
+          id: 2,
+          slug: 'cardapio-copiloto',
+          title: 'Cardápio Copiloto',
+          category: 'IA Generativa',
+          deploy: 'Vercel',
+          url: 'https://cardapio-copiloto.vercel.app/',
+          desc: 'Copiloto que lê o cardápio (foto, PDF ou texto), sugere preço, descrição, nome e combo e simula o ticket médio em tempo real. Gemini opcional por proxy serverless.',
+          tags: ['Gemini API', 'API serverless', 'WCAG 2.1 AA'],
+          video: './media/cardapio.mp4',
+          poster: './media/cardapio.png'
+        },
+        {
+          id: 3,
+          slug: 'urbanpulse',
+          title: 'UrbanPulse',
+          category: 'Geodados & IA',
+          deploy: 'Vercel',
+          url: 'https://urban-pulse-tawny.vercel.app/#/',
+          desc: 'Hub de inteligência territorial: mapa interativo, simulador de raio de atendimento de 1 a 10 km, índice de vulnerabilidade social e copiloto de IA generativa. Exporta PDF e CSV.',
+          tags: ['React-Leaflet', 'Tailwind CSS', 'WCAG 2.1 AA'],
+          video: null,
+          poster: './media/urbanpulse.png'
+        },
+        {
+          id: 4,
+          slug: 'fluxo-n8n',
+          title: 'Fluxo n8n de Vibe Coding',
+          category: 'Automação & Prompts',
+          deploy: 'n8n',
+          url: null,
+          desc: 'Fluxo de automação no n8n que transforma uma ideia em um prompt otimizado para vibe coding. Foi usado para criar o prompt-base deste portfólio.',
+          tags: ['n8n', 'Engenharia de prompt', 'Vibe coding'],
+          video: null,
+          poster: './media/fluxo-n8n.png'
+        },
+        {
+          id: 5,
+          slug: 'agroecologia',
+          title: 'EdUENF Agroecologia',
+          category: 'Ferramenta interna',
+          deploy: 'Render',
+          url: 'https://apoio-eduenf-agroecologia.onrender.com/',
+          desc: 'Site público e painel interno de gestão editorial, com backend próprio em Node e Express, login seguro e sincronização com a planilha do Google Forms.',
+          tags: ['React + Vite', 'Node + Express', 'Autenticação'],
+          video: './media/apoio.mp4',
+          poster: './media/apoio.png'
+        }
+      ]
+    };
+
+    const isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* ==========================================================================
+       1. Procedural Poster Fallback & Media Manager
+       ========================================================================== */
+    function createProceduralPoster(project, width = 1600, height = 900) {
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d');
+
+      // Background #0c0c0d
+      ctx.fillStyle = '#0c0c0d';
+      ctx.fillRect(0, 0, width, height);
+
+      // 1px #232325 frame inset 24px
+      ctx.strokeStyle = '#232325';
+      ctx.lineWidth = 1;
+      ctx.strokeRect(24, 24, width - 48, height - 48);
+
+      // Project title in Newsreader 300 sized to fit at ink colour (#ededeb)
+      ctx.fillStyle = '#ededeb';
+      let titleFontSize = Math.round(height * 0.12);
+      ctx.font = `300 ${titleFontSize}px 'Newsreader', ui-serif, Georgia, serif`;
+      while (ctx.measureText(project.title).width > width - 160 && titleFontSize > 36) {
+        titleFontSize -= 4;
+        ctx.font = `300 ${titleFontSize}px 'Newsreader', ui-serif, Georgia, serif`;
+      }
+      ctx.textBaseline = 'middle';
+      ctx.textAlign = 'center';
+      ctx.fillText(project.title, width / 2, height / 2 - 30);
+
+      // Category, Deploy in Geist 500 mute (#8a8a88)
+      ctx.fillStyle = '#8a8a88';
+      ctx.font = `500 ${Math.max(22, Math.round(titleFontSize * 0.28))}px 'Geist', sans-serif`;
+      ctx.fillText(`${project.category}, ${project.deploy}`, width / 2, height / 2 + titleFontSize * 0.45);
+
+      // Three tags in bottom-left in Geist 500 mute (#8a8a88)
+      const tagFontSize = Math.round(height * 0.028);
+      ctx.font = `500 ${tagFontSize}px 'Geist', sans-serif`;
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'bottom';
+      ctx.fillText(project.tags.join('   ·   '), 64, height - 56);
+
+      return canvas;
+    }
+
+    class ProjectMediaManager {
+      constructor(projects) {
+        this.projects = projects;
+        this.items = [];
+        this.loadedCount = 0;
+        this.onProgress = null;
+        this.init();
+      }
+
+      init() {
+        this.projects.forEach((proj, index) => {
+          const fallbackCanvas = createProceduralPoster(proj);
+          const fallbackTexture = new THREE.CanvasTexture(fallbackCanvas);
+          fallbackTexture.colorSpace = THREE.SRGBColorSpace;
+
+          const video = document.createElement('video');
+          video.muted = true;
+          video.loop = true;
+          video.playsInline = true;
+          video.setAttribute('playsinline', '');
+          video.setAttribute('webkit-playsinline', '');
+          video.preload = 'metadata';
+          video.crossOrigin = 'anonymous';
+
+          const item = {
+            project: proj,
+            index,
+            video,
+            posterImage: null,
+            fallbackCanvas,
+            fallbackTexture,
+            videoTexture: null,
+            activeTexture: fallbackTexture,
+            hasFrame: false,
+            isPlaying: false
+          };
+
+          // Attempt loading poster image (try proj.poster, fallback to slug .png or .jpg)
+          const poster = new Image();
+          poster.crossOrigin = 'anonymous';
+          poster.onload = () => {
+            item.posterImage = poster;
+            const pTex = new THREE.Texture(poster);
+            pTex.colorSpace = THREE.SRGBColorSpace;
+            pTex.needsUpdate = true;
+            item.posterTexture = pTex;
+            item.activeTexture = pTex;
+            this.markLoaded(item);
+          };
+          poster.onerror = () => {
+            // If primary poster fails, attempt fallback to .jpg or canvas
+            if (!poster.src.endsWith('.jpg')) {
+              poster.src = `./media/${proj.slug}.jpg`;
+            } else {
+              this.markLoaded(item);
             }
+          };
+          poster.src = proj.poster || `./media/${proj.slug}.png`;
+
+          // Video load listeners
+          let frameReported = false;
+          const onFrameReady = () => {
+            if (frameReported) return;
+            frameReported = true;
+            item.hasFrame = true;
+            if (!item.videoTexture) {
+              item.videoTexture = new THREE.VideoTexture(video);
+              item.videoTexture.colorSpace = THREE.SRGBColorSpace;
+              item.videoTexture.minFilter = THREE.LinearFilter;
+              item.videoTexture.magFilter = THREE.LinearFilter;
+            }
+            // Miniature keeps high-resolution print; video texture is retained for when user clicks
+            this.markLoaded(item);
+          };
+
+          video.addEventListener('loadeddata', onFrameReady);
+          video.addEventListener('canplay', onFrameReady);
+          video.addEventListener('timeupdate', () => {
+            if (video.currentTime > 0) onFrameReady();
+          });
+          video.addEventListener('error', () => {
+            // Silently fall back to poster or canvas
+            this.markLoaded(item);
+          });
+
+          this.items.push(item);
+        });
+      }
+
+      startVideos() {
+        this.items.forEach(item => {
+          if (item.project.video) {
+            if (!item.video.src) {
+              item.video.src = item.project.video;
+              item.video.load();
+            }
+            item.video.play().then(() => {
+              item.isPlaying = true;
+            }).catch(() => {
+              // Autoplay policy or missing file
+            });
+          } else {
+            // Project has no video (e.g. static graphic poster); mark loaded
+            this.markLoaded(item);
+          }
+        });
+      }
+
+      markLoaded(item) {
+        this.loadedCount++;
+        const share = Math.min(0.99, this.loadedCount / (this.items.length * 2));
+        if (this.onProgress) this.onProgress(share);
+      }
+    }
+
+    const mediaManager = new ProjectMediaManager(PORTFOLIO_DATA.projects);
+
+    /* ==========================================================================
+       2. Dock, Menu & Hash Routing
+       ========================================================================== */
+    const dock = document.getElementById('dock');
+    const dockTabs = document.querySelectorAll('.dock-tab');
+    const menuBtn = document.getElementById('dock-menu-btn');
+    const menuPanel = document.getElementById('dock-menu-panel');
+    let isMenuOpen = false;
+    let dockVisible = false;
+
+    function revealDock() {
+      if (dockVisible) return;
+      dockVisible = true;
+      gsap.fromTo(dock, 
+        { y: 16, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.9, ease: 'expo.out', onComplete: () => {
+          dock.style.pointerEvents = 'auto';
+        }}
+      );
+    }
+
+    function toggleMenu() {
+      isMenuOpen = !isMenuOpen;
+      menuBtn.classList.toggle('open', isMenuOpen);
+      menuPanel.classList.toggle('open', isMenuOpen);
+    }
+
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
+    });
+
+    document.addEventListener('click', (e) => {
+      if (isMenuOpen && !menuPanel.contains(e.target) && !menuBtn.contains(e.target)) {
+        toggleMenu();
+      }
+    });
+
+    // Hash routing
+    const views = {
+      gallery: { el: document.getElementById('view-gallery'), instance: null, tab: document.getElementById('tab-gallery') },
+      projects: { el: document.getElementById('view-projects'), instance: null, tab: document.getElementById('tab-projects') },
+      about: { el: document.getElementById('view-about'), instance: null, tab: document.getElementById('tab-about') }
+    };
+    let currentViewKey = null;
+
+    async function switchView(targetKey) {
+      if (!views[targetKey] || targetKey === currentViewKey) return;
+      if (isMenuOpen) toggleMenu();
+
+      const prevKey = currentViewKey;
+      currentViewKey = targetKey;
+
+      // Update tabs
+      dockTabs.forEach(t => t.classList.toggle('active', t.dataset.view === targetKey));
+
+      // Build target view lazily
+      if (!views[targetKey].instance) {
+        if (targetKey === 'gallery') views[targetKey].instance = new GalleryView(views[targetKey].el);
+        else if (targetKey === 'projects') views[targetKey].instance = new ProjectsView(views[targetKey].el);
+        else if (targetKey === 'about') views[targetKey].instance = new AboutView(views[targetKey].el);
+      }
+
+      if (prevKey && views[prevKey]) {
+        const prev = views[prevKey];
+        gsap.to(prev.el, {
+          opacity: 0,
+          duration: 0.35,
+          ease: 'power2.in',
+          onComplete: () => {
+            prev.el.style.visibility = 'hidden';
+            prev.el.classList.remove('active');
+            if (prev.instance && prev.instance.stop) prev.instance.stop();
+            
+            showNextView(targetKey);
+          }
+        });
+      } else {
+        showNextView(targetKey);
+      }
+    }
+
+    function showNextView(targetKey) {
+      const next = views[targetKey];
+      next.el.style.visibility = 'visible';
+      next.el.classList.add('active');
+      if (next.instance && next.instance.start) next.instance.start();
+
+      gsap.to(next.el, {
+        opacity: 1,
+        duration: 0.5,
+        ease: 'power2.out'
+      });
+
+      if (targetKey !== 'gallery') {
+        revealDock();
+      }
+    }
+
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.replace('#', '') || 'gallery';
+      if (views[hash]) switchView(hash);
+    });
+
+    document.querySelectorAll('[data-route]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const route = link.getAttribute('data-route');
+        if (route) window.location.hash = '#' + route;
+      });
+    });
+
+
+    /* ==========================================================================
+       3. View 1: Gallery View (Sphere of Videos)
+       ========================================================================== */
+    class GalleryView {
+      constructor(container) {
+        this.container = container;
+        this.wrap = container.querySelector('#gallery-canvas-wrap');
+        this.init();
+      }
+
+      init() {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+
+        // Conversion px(v) = v * (2 * 12 * tan(30deg)) / viewportHeight
+        this.tan30 = Math.tan(30 * Math.PI / 180);
+        this.camZ = 12;
+        this.px = (v) => v * (2 * this.camZ * this.tan30) / this.height;
+
+        this.scene = new THREE.Scene();
+        this.camera = new THREE.PerspectiveCamera(60, this.width / this.height, 0.1, 100);
+        this.camera.position.z = this.camZ;
+
+        this.renderer = new THREE.WebGLRenderer({
+          alpha: true,
+          antialias: !isTouch
+        });
+        this.renderer.setClearColor(0x0c0c0d, 1);
+        this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        this.renderer.setSize(this.width, this.height);
+        this.wrap.appendChild(this.renderer.domElement);
+
+        this.sphereGroup = new THREE.Group();
+        this.scene.add(this.sphereGroup);
+
+        this.calcConstants();
+        this.createPlanes();
+        this.setupInteraction();
+        this.setupIntro();
+
+        window.addEventListener('resize', () => this.onResize());
+      }
+
+      calcConstants() {
+        let factor = 1.0;
+        if (this.width >= 1025 && this.width <= 1440) factor = 0.8;
+
+        this.baseRadius = 250 * factor;
+        if (this.width <= 640) {
+          this.basePlaneSizePx = 72;
+          this.baseRadius = (this.width / 2) - 24 - (this.basePlaneSizePx / 2);
+        } else {
+          this.basePlaneSizePx = 104 * factor;
+        }
+
+        this.radiusX = this.px(this.baseRadius);
+        this.radiusY = this.px(this.baseRadius);
+        this.radiusZ = this.px(this.baseRadius);
+
+        this.planeWidth = this.px(this.basePlaneSizePx);
+        this.planeHeight = this.planeWidth * (9 / 16);
+        this.centerScale = (this.basePlaneSizePx * 120 / 82) / this.basePlaneSizePx;
+      }
+
+      createPlanes() {
+        this.planes = [];
+        const N = 15;
+        // Optimal greedy placement maximizing distance between same projects (3 copies each of 0..4)
+        this.projectAssignment = [2, 0, 3, 4, 4, 1, 1, 0, 0, 3, 2, 2, 1, 3, 4];
+
+        // Fibonacci sphere coordinates
+        this.spherePositions = [];
+        for (let i = 0; i < N; i++) {
+          const y = i * (2 / N) - 1 + (1 / N);
+          const r = Math.sqrt(Math.max(0, 1 - y * y));
+          const angle = Math.PI * (3 - Math.sqrt(5)) * i;
+          this.spherePositions.push(new THREE.Vector3(
+            Math.cos(angle) * r * this.radiusX,
+            y * this.radiusY,
+            Math.sin(angle) * r * this.radiusZ
+          ));
+        }
+
+        const geo = new THREE.PlaneGeometry(1, 1);
+
+        for (let i = 0; i < N; i++) {
+          const pIndex = this.projectAssignment[i];
+          const mediaItem = mediaManager.items[pIndex];
+
+          const mat = new THREE.MeshBasicMaterial({
+            map: mediaItem.activeTexture,
+            transparent: true,
+            side: THREE.DoubleSide,
+            depthWrite: false,
+            color: 0x1b1b1d
+          });
+
+          const mesh = new THREE.Mesh(geo, mat);
+          mesh.scale.set(this.planeWidth, this.planeHeight, 1);
+          mesh.userData = {
+            index: i,
+            projectIndex: pIndex,
+            project: PORTFOLIO_DATA.projects[pIndex],
+            spherePos: this.spherePositions[i].clone(),
+            baseScale: new THREE.Vector3(this.planeWidth, this.planeHeight, 1)
+          };
+
+          this.sphereGroup.add(mesh);
+          this.planes.push(mesh);
+        }
+      }
+
+      setupIntro() {
+        const wordmarkCanvas = document.getElementById('gallery-wordmark-canvas');
+        const ctx = wordmarkCanvas.getContext('2d');
+        ctx.fillStyle = '#ededeb';
+        ctx.font = '600 64px Geist, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('B.KURY', 180, 60);
+
+        if (prefersReducedMotion) {
+          // Skip intro
+          this.planes.forEach(p => {
+            p.position.copy(p.userData.spherePos);
+            p.material.opacity = 1;
+            p.material.color.setHex(0xffffff);
+          });
+          document.getElementById('gallery-intro-overlay').style.display = 'none';
+          document.getElementById('gallery-hint').style.opacity = '1'; const gb = document.getElementById('gallery-brand'); if (gb) gb.style.opacity = '1';
+          revealDock();
+          this.introDone = true;
+          return;
+        }
+
+        // Intro sequence
+        // Videos load on demand when user clicks a project
+
+        const wordmarkEl = document.getElementById('gallery-wordmark');
+        const sideLeft = document.querySelector('#gallery-side-left span');
+        const sideRight = document.querySelector('#gallery-side-right span');
+        const counter = document.getElementById('gallery-counter');
+
+        gsap.to(wordmarkEl, { opacity: 1, duration: 0.6, delay: 0.2 });
+        gsap.to([sideLeft, sideRight], { y: '0%', duration: 0.9, stagger: 0.07, delay: 0.5, ease: 'expo.out' });
+        gsap.fromTo(counter, { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.75, delay: 0.5, ease: 'power4.out' });
+
+        let currentCount = 1;
+        mediaManager.onProgress = (share) => {
+          const target = Math.min(99, Math.round(share * 100));
+          gsap.to({ val: currentCount }, {
+            val: target,
+            duration: 0.5,
+            ease: 'power1.out',
+            onUpdate: function() {
+              currentCount = Math.round(this.targets()[0].val);
+              counter.textContent = String(currentCount).padStart(3, '0');
+            }
+          });
+        };
+
+        // Form intro circle of 10 planes
+        this.introPlanes = this.planes.slice(0, 10);
+        const circleRadius = this.px(this.width <= 640 ? 240 * 0.75 : 240);
+        this.circleAngleOffset = 0;
+        this.circleSpinSpeed = 0.5 * (Math.PI / 180);
+
+        this.introPlanes.forEach((plane, idx) => {
+          const theta = -Math.PI / 2 + idx * (Math.PI * 2 / 10);
+          plane.position.set(Math.cos(theta) * circleRadius, Math.sin(theta) * circleRadius, 0);
+          plane.userData.circleAngle = theta;
+          plane.material.opacity = 0;
+          plane.scale.set(0.01, 0.01, 1);
+        });
+
+        // Hide other 5 planes until explosion
+        this.planes.slice(10).forEach(p => {
+          p.material.opacity = 0;
+          p.position.set(0, 0, 0);
+        });
+
+        setTimeout(() => {
+          gsap.to({ val: currentCount }, {
+            val: 100,
+            duration: 0.4,
+            onUpdate: function() {
+              counter.textContent = String(Math.round(this.targets()[0].val)).padStart(3, '0');
+            },
+            onComplete: () => {
+              gsap.to(counter, { yPercent: -120, opacity: 0, duration: 0.5, ease: 'power2.in' });
+            }
+          });
+
+          // Show circle planes
+          this.introPlanes.forEach((plane, idx) => {
+            gsap.to(plane.material, { opacity: 1, duration: 1, delay: idx * 0.1, ease: 'power3.out' });
+            gsap.to(plane.scale, {
+              x: this.planeWidth * (70 / this.basePlaneSizePx),
+              y: this.planeHeight * (70 / this.basePlaneSizePx),
+              duration: 1,
+              delay: idx * 0.1,
+              ease: 'back.out(1.7)'
+            });
+          });
+
+          this.isCircleSpinning = true;
+
+          // 1.3s later spin ramps up to 7.3x over 1s
+          setTimeout(() => {
+            gsap.to(this, { circleSpinSpeed: this.circleSpinSpeed * 7.3, duration: 1, ease: 'power2.in' });
+
+            // 0.8s after ramp ends
+            setTimeout(() => {
+              this.isCircleSpinning = false;
+              gsap.to(wordmarkEl, { opacity: 0, duration: 0.75, ease: 'power2.inOut' });
+              gsap.to([sideLeft, sideRight], { y: '-120%', duration: 0.75, ease: 'power2.inOut' });
+
+              // Collapse to centre
+              this.introPlanes.forEach((plane, idx) => {
+                gsap.to(plane.position, {
+                  x: 0,
+                  y: 0,
+                  z: (idx - 5) * this.px(1.5),
+                  duration: 1.25,
+                  delay: idx * 0.05,
+                  ease: 'power2.inOut'
+                });
+                gsap.to(plane.scale, {
+                  x: this.planeWidth * this.centerScale,
+                  y: this.planeHeight * this.centerScale,
+                  duration: 1.25,
+                  delay: idx * 0.05,
+                  ease: 'power2.inOut'
+                });
+              });
+
+              // Explode
+              setTimeout(() => {
+                this.explodeToSphere();
+              }, 1250 + 200);
+
+            }, 1000 + 800);
+
+          }, 1300);
+
+        }, 2000);
+      }
+
+      explodeToSphere() {
+        const sideLeft = document.querySelector('#gallery-side-left span');
+        const sideRight = document.querySelector('#gallery-side-right span');
+        const hint = document.getElementById('gallery-hint');
+
+        this.planes.forEach(plane => {
+          plane.material.opacity = 1;
+          plane.material.color.setHex(0xffffff);
+          const targetPos = plane.userData.spherePos;
+          const targetScale = plane.userData.baseScale;
+
+          const obj = { t: 0 };
+          gsap.to(obj, {
+            t: 1,
+            duration: 1.0,
+            ease: 'power3.out',
+            onUpdate: () => {
+              const overshoot = 1 + 0.1 * Math.sin(Math.PI * obj.t);
+              plane.position.lerpVectors(new THREE.Vector3(0, 0, 0), targetPos, obj.t * overshoot);
+            }
+          });
+
+          gsap.to(plane.scale, {
+            x: targetScale.x,
+            y: targetScale.y,
+            duration: 1.0,
+            ease: 'power3.out'
+          });
+        });
+
+        gsap.to([sideLeft, sideRight], { y: '0%', duration: 0.9, delay: 0.3, ease: 'expo.out' });
+        gsap.to(hint, { opacity: 1, duration: 0.9, delay: 0.5 });
+        revealDock();
+        this.introDone = true;
+      }
+
+      setupInteraction() {
+        this.pointer = new THREE.Vector2();
+        this.rawPointer = { x: 0, y: 0 };
+        this.pointerDownPos = { x: 0, y: 0 };
+        this.totalPath = 0;
+        this.isDragging = false;
+        this.hasInteracted = false;
+
+        this.velocity = { x: 0, y: 0 };
+        this.smoothedAngle = { x: 0, y: 0 };
+        this.autoSpinAxis = new THREE.Vector3(
+          Math.sin(23 * Math.PI / 180),
+          Math.cos(23 * Math.PI / 180),
+          0
+        ).normalize();
+
+        this.raycaster = new THREE.Raycaster();
+        this.hoveredPlane = null;
+        this.zoomedPlane = null;
+        this.isOverviewOpen = false;
+
+        // Elements
+        this.captionInner = document.getElementById('gallery-caption-inner');
+        this.captionTitle = document.getElementById('gallery-caption-title');
+        this.captionCat = document.getElementById('gallery-caption-cat');
+        this.cursorLabel = document.getElementById('cursor-label');
+        this.overviewPanel = document.getElementById('gallery-overview');
+        this.overviewCloseBtn = document.getElementById('overview-close-btn');
+        this.overviewLiveBtn = document.getElementById('overview-live-btn');
+
+        this.quickCursorX = gsap.quickTo(this.cursorLabel, 'x', { duration: 0.5, ease: 'power3.out' });
+        this.quickCursorY = gsap.quickTo(this.cursorLabel, 'y', { duration: 0.5, ease: 'power3.out' });
+
+        this.overviewCloseBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.collapseZoom();
+        });
+
+        window.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && this.zoomedPlane) {
+            this.collapseZoom();
+          }
+        });
+
+        // Pointer listeners
+        window.addEventListener('pointerdown', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          this.hasInteracted = true;
+          this.isDragging = true;
+          this.pointerDownPos = { x: e.clientX, y: e.clientY };
+          this.lastPointerPos = { x: e.clientX, y: e.clientY };
+          this.totalPath = 0;
+          this.updateCursor();
+        });
+
+        window.addEventListener('pointermove', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          this.rawPointer.x = e.clientX;
+          this.rawPointer.y = e.clientY;
+          this.pointer.x = (e.clientX / this.width) * 2 - 1;
+          this.pointer.y = -(e.clientY / this.height) * 2 + 1;
+
+          this.quickCursorX(e.clientX + 14);
+          this.quickCursorY(e.clientY + 14);
+
+          if (this.isDragging) {
+            const dx = e.clientX - this.lastPointerPos.x;
+            const dy = e.clientY - this.lastPointerPos.y;
+            this.totalPath += Math.hypot(dx, dy);
+
+            if (!this.zoomedPlane) {
+              this.velocity.x += dx * 0.001;
+              this.velocity.y += dy * 0.001;
+            }
+            this.lastPointerPos = { x: e.clientX, y: e.clientY };
+          }
+        });
+
+        window.addEventListener('pointerup', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          const distMoved = Math.hypot(e.clientX - this.pointerDownPos.x, e.clientY - this.pointerDownPos.y);
+          this.isDragging = false;
+          this.updateCursor();
+
+          if (distMoved < 6 && this.totalPath < 10 && this.introDone) {
+            this.handleClick();
+          }
+        });
+
+        window.addEventListener('wheel', (e) => {
+          if (!this.container.classList.contains('active') || this.zoomedPlane) return;
+          this.hasInteracted = true;
+          this.velocity.x += e.deltaY * 0.0002;
+        }, { passive: true });
+      }
+
+      handleClick() {
+        if (this.hoveredPlane) {
+          if (!this.zoomedPlane) {
+            this.expandPlane(this.hoveredPlane);
+          } else if (this.zoomedPlane === this.hoveredPlane) {
+            if (!this.isOverviewOpen) {
+              this.openOverview();
+            } else {
+              this.closeOverview();
+            }
+          } else {
+            this.collapseZoom();
+          }
+        } else {
+          if (this.zoomedPlane) {
+            this.collapseZoom();
           }
         }
       }
-    </script>
-    <style>
-      /* Custom selection & utility */
-      ::selection {
-        background-color: #EA1D2C;
-        color: #ffffff;
+
+      expandPlane(plane) {
+        this.zoomedPlane = plane;
+        const proj = plane.userData.project;
+
+        // Pause other videos
+        mediaManager.items.forEach(it => {
+          if (it.project.id !== proj.id && it.isPlaying) it.video.pause();
+        });
+        const currentMedia = mediaManager.items[plane.userData.projectIndex];
+        if (proj.video) {
+          if (!currentMedia.video.src) {
+            currentMedia.video.src = proj.video;
+            currentMedia.video.load();
+          }
+          if (!currentMedia.videoTexture) {
+            currentMedia.videoTexture = new THREE.VideoTexture(currentMedia.video);
+            currentMedia.videoTexture.colorSpace = THREE.SRGBColorSpace;
+          }
+          plane.material.map = currentMedia.videoTexture;
+          plane.material.needsUpdate = true;
+          currentMedia.video.play().catch(() => {});
+        }
+
+        // Target height = 70% visible height
+        const visibleHeightAtDepth = 2 * this.camZ * this.tan30;
+        let targetH = visibleHeightAtDepth * 0.70;
+        let targetW = targetH * (16 / 9);
+
+        // Cap on phones
+        const maxPhoneW = this.px(this.width - 16);
+        if (targetW > maxPhoneW) {
+          targetW = maxPhoneW;
+          targetH = targetW * (9 / 16);
+        }
+
+        // Push other planes outward x1.8 and fade to 0.1
+        this.planes.forEach(p => {
+          if (p !== plane) {
+            const pushedPos = p.userData.spherePos.clone().multiplyScalar(1.8);
+            gsap.to(p.position, { x: pushedPos.x, y: pushedPos.y, z: pushedPos.z, duration: 0.8, ease: 'power4.out' });
+            gsap.to(p.material, { opacity: 0.1, duration: 0.8, ease: 'power4.out' });
+          }
+        });
+
+        // Move zoomed plane to screen centre
+        gsap.to(plane.position, { x: 0, y: 0, z: 0, duration: 0.8, ease: 'power4.out' });
+        gsap.to(plane.scale, { x: targetW, y: targetH, duration: 0.8, ease: 'power4.out' });
+
+        this.cursorLabel.textContent = 'Detalhes';
+        gsap.to(this.cursorLabel, { scale: 1, opacity: 1, duration: 0.6, ease: 'power4.out' });
       }
-      .font-tabular {
-        font-variant-numeric: tabular-nums;
+
+      openOverview() {
+        this.isOverviewOpen = true;
+        const plane = this.zoomedPlane;
+        const proj = plane.userData.project;
+
+        const reservedBand = this.px(290);
+        const remainingHeight = (2 * this.camZ * this.tan30) - reservedBand;
+        const targetH = remainingHeight * 0.70;
+        const targetW = targetH * (16 / 9);
+
+        // Shift plane up by half reserved band
+        gsap.to(plane.position, { y: reservedBand / 2, duration: 0.8, ease: 'power4.out' });
+        gsap.to(plane.scale, { x: targetW, y: targetH, duration: 0.8, ease: 'power4.out' });
+
+        // Populate and reveal overview panel
+        document.getElementById('overview-title').textContent = proj.title;
+        document.getElementById('overview-cat').textContent = `${proj.category}, ${proj.deploy}`;
+        document.getElementById('overview-desc').textContent = proj.desc;
+
+        const tagsContainer = document.getElementById('overview-tags');
+        tagsContainer.innerHTML = '';
+        proj.tags.forEach(t => {
+          const tagSpan = document.createElement('span');
+          tagSpan.className = 'overview-tag';
+          tagSpan.textContent = t;
+          tagsContainer.appendChild(tagSpan);
+        });
+
+        if (proj.url) {
+          this.overviewLiveBtn.href = proj.url;
+          this.overviewLiveBtn.style.display = 'inline-flex';
+        } else {
+          this.overviewLiveBtn.style.display = 'none';
+        }
+
+        this.overviewPanel.style.pointerEvents = 'auto';
+        gsap.fromTo(this.overviewPanel, 
+          { y: 16, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.7, delay: 0.12, ease: 'expo.out' }
+        );
+
+        this.cursorLabel.textContent = 'Fechar';
       }
-    </style>
-  </head>
-  <body class="bg-[#FAF9F6] text-[#0A0A0B] antialiased selection:bg-[#EA1D2C] selection:text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+      closeOverview() {
+        this.isOverviewOpen = false;
+        gsap.to(this.overviewPanel, {
+          y: 16,
+          opacity: 0,
+          duration: 0.4,
+          ease: 'power2.in',
+          onComplete: () => {
+            this.overviewPanel.style.pointerEvents = 'none';
+          }
+        });
+
+        if (this.zoomedPlane) {
+          const visibleHeightAtDepth = 2 * this.camZ * this.tan30;
+          let targetH = visibleHeightAtDepth * 0.70;
+          let targetW = targetH * (16 / 9);
+          const maxPhoneW = this.px(this.width - 16);
+          if (targetW > maxPhoneW) {
+            targetW = maxPhoneW;
+            targetH = targetW * (9 / 16);
+          }
+          gsap.to(this.zoomedPlane.position, { y: 0, duration: 0.8, ease: 'power4.out' });
+          gsap.to(this.zoomedPlane.scale, { x: targetW, y: targetH, duration: 0.8, ease: 'power4.out' });
+        }
+        this.cursorLabel.textContent = 'Detalhes';
+      }
+
+      collapseZoom() {
+        if (!this.zoomedPlane) return;
+        this.closeOverview();
+
+        // Pause video and restore poster texture on zoomed plane
+        const m = mediaManager.items[this.zoomedPlane.userData.projectIndex];
+        if (m && m.video) m.video.pause();
+        if (m && (m.posterTexture || m.posterImage)) {
+          this.zoomedPlane.material.map = m.posterTexture || m.activeTexture;
+          this.zoomedPlane.material.needsUpdate = true;
+        }
+
+        this.planes.forEach(p => {
+          const targetPos = p.userData.spherePos;
+          const targetScale = p.userData.baseScale;
+          gsap.to(p.position, { x: targetPos.x, y: targetPos.y, z: targetPos.z, duration: 0.8, ease: 'power4.out' });
+          gsap.to(p.scale, { x: targetScale.x, y: targetScale.y, duration: 0.8, ease: 'power4.out' });
+          gsap.to(p.material, { opacity: 1, duration: 0.8, ease: 'power4.out' });
+        });
+
+        this.zoomedPlane = null;
+        gsap.to(this.cursorLabel, { scale: 0.6, opacity: 0, duration: 0.4 });
+      }
+
+      updateCursor() {
+        if (this.isDragging) {
+          document.body.style.cursor = 'grabbing';
+          return;
+        }
+        if (this.hoveredPlane) {
+          document.body.style.cursor = 'pointer';
+          return;
+        }
+        const distFromCenter = Math.hypot(this.rawPointer.x - this.width / 2, this.rawPointer.y - this.height / 2);
+        if (distFromCenter < 250) {
+          document.body.style.cursor = 'grab';
+        } else {
+          document.body.style.cursor = 'default';
+        }
+      }
+
+      onResize() {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+        this.camera.aspect = this.width / this.height;
+        this.camera.updateProjectionMatrix();
+        this.renderer.setSize(this.width, this.height);
+        this.calcConstants();
+
+        const N = 15;
+        this.spherePositions = [];
+        for (let i = 0; i < N; i++) {
+          const y = i * (2 / N) - 1 + (1 / N);
+          const r = Math.sqrt(Math.max(0, 1 - y * y));
+          const angle = Math.PI * (3 - Math.sqrt(5)) * i;
+          this.spherePositions.push(new THREE.Vector3(
+            Math.cos(angle) * r * this.radiusX,
+            y * this.radiusY,
+            Math.sin(angle) * r * this.radiusZ
+          ));
+        }
+
+        if (this.planes) {
+          this.planes.forEach((plane, i) => {
+            plane.userData.spherePos.copy(this.spherePositions[i]);
+            plane.userData.baseScale.set(this.planeWidth, this.planeHeight, 1);
+            if (!this.zoomedPlane || plane !== this.zoomedPlane) {
+              if (this.introDone) {
+                plane.position.copy(this.spherePositions[i]);
+                plane.scale.set(this.planeWidth, this.planeHeight, 1);
+              }
+            }
+          });
+        }
+      }
+
+      start() {
+        this.active = true;
+        this.animate();
+      }
+
+      stop() {
+        this.active = false;
+        if (this.rafId) cancelAnimationFrame(this.rafId);
+      }
+
+      animate() {
+        if (!this.active) return;
+        this.rafId = requestAnimationFrame(() => this.animate());
+
+        // Update poster textures on sphere planes
+        mediaManager.items.forEach((it, idx) => {
+          const posterTex = it.posterTexture || it.activeTexture;
+          this.planes.forEach(p => {
+            if (p !== this.zoomedPlane && p.userData.projectIndex === idx && p.material.map !== posterTex) {
+              p.material.map = posterTex;
+              p.material.needsUpdate = true;
+            }
+          });
+        });
+
+        if (this.isCircleSpinning) {
+          this.circleAngleOffset += this.circleSpinSpeed;
+          const circleRadius = this.px(this.width <= 640 ? 240 * 0.75 : 240);
+          this.introPlanes.forEach(plane => {
+            const angle = plane.userData.circleAngle + this.circleAngleOffset;
+            plane.position.x = Math.cos(angle) * circleRadius;
+            plane.position.y = Math.sin(angle) * circleRadius;
+          });
+        }
+
+        if (this.introDone && !this.zoomedPlane) {
+          // Spin physics
+          this.velocity.x *= 0.94;
+          this.velocity.y *= 0.94;
+
+          this.smoothedAngle.x += (this.velocity.x - this.smoothedAngle.x) * 0.11;
+          this.smoothedAngle.y += (this.velocity.y - this.smoothedAngle.y) * 0.11;
+
+          if (Math.abs(this.smoothedAngle.x) > 0.00001 || Math.abs(this.smoothedAngle.y) > 0.00001) {
+            const qYaw = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), this.smoothedAngle.x);
+            const qPitch = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), this.smoothedAngle.y);
+            this.sphereGroup.quaternion.premultiply(qYaw).premultiply(qPitch);
+          }
+
+          // Idle auto spin (tilts 23 deg from vertical)
+          if (!this.hasInteracted && !prefersReducedMotion) {
+            const qAuto = new THREE.Quaternion().setFromAxisAngle(this.autoSpinAxis, 0.001);
+            this.sphereGroup.quaternion.premultiply(qAuto);
+          }
+
+          // Raycasting on pointermove
+          this.raycaster.setFromCamera(this.pointer, this.camera);
+          const intersects = this.raycaster.intersectObjects(this.planes);
+          const hit = intersects.length > 0 ? intersects[0].object : null;
+
+          if (hit !== this.hoveredPlane) {
+            this.hoveredPlane = hit;
+            this.updateCursor();
+
+            if (this.hoveredPlane) {
+              const proj = this.hoveredPlane.userData.project;
+              gsap.to(this.captionInner, {
+                yPercent: -110,
+                duration: 0.25,
+                ease: 'power2.in',
+                onComplete: () => {
+                  this.captionTitle.textContent = proj.title;
+                  this.captionCat.textContent = `${proj.category}, ${proj.deploy}`;
+                  gsap.fromTo(this.captionInner,
+                    { yPercent: 110 },
+                    { yPercent: 0, duration: 0.6, ease: 'expo.out' }
+                  );
+                }
+              });
+            }
+          }
+        }
+
+        // Each plane faces camera: quaternion is inverse of sphereGroup quaternion
+        const invQ = this.sphereGroup.quaternion.clone().invert();
+        this.planes.forEach(p => {
+          if (!this.zoomedPlane || p !== this.zoomedPlane) {
+            p.quaternion.copy(invQ);
+          } else {
+            p.quaternion.identity();
+          }
+        });
+
+        this.renderer.render(this.scene, this.camera);
+      }
+    }
+
+
+    /* ==========================================================================
+       4. View 2: Projects View (WebGL Grid & Glass-Lens Pass)
+       ========================================================================== */
+    class ProjectsView {
+      constructor(container) {
+        this.container = container;
+        this.wrap = container.querySelector('#projects-canvas-wrap');
+        this.init();
+      }
+
+      init() {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+
+        this.scene = new THREE.Scene();
+        this.scene.background = new THREE.Color(0x0c0c0d);
+
+        // Perspective camera fov 35 placed so 1 unit = 1 pixel
+        const fov = 35;
+        const camZ = (this.height / 2) / Math.tan((17.5 * Math.PI) / 180);
+        this.camera = new THREE.PerspectiveCamera(fov, this.width / this.height, 0.1, camZ * 4);
+        this.camera.position.set(this.width / 2, -this.height / 2, camZ);
+        this.camera.lookAt(this.width / 2, -this.height / 2, 0);
+
+        this.renderer = new THREE.WebGLRenderer({ antialias: true });
+        this.renderer.setClearColor(0x0c0c0d, 1);
+        this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        this.renderer.setSize(this.width, this.height);
+        this.wrap.appendChild(this.renderer.domElement);
+
+        // Post-processing Glass Lens Target
+        this.renderTarget = new THREE.WebGLRenderTarget(this.width * Math.min(window.devicePixelRatio, 2), this.height * Math.min(window.devicePixelRatio, 2), {
+          minFilter: THREE.LinearFilter,
+          magFilter: THREE.LinearFilter,
+          format: THREE.RGBAFormat,
+          samples: 4
+        });
+
+        this.setupPostPass();
+        this.buildLayout();
+        this.setupInteractions();
+        this.setupEntrance();
+
+        window.addEventListener('resize', () => this.onResize());
+      }
+
+      setupPostPass() {
+        this.postScene = new THREE.Scene();
+        this.postCamera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+
+        const glassLensShader = {
+          uniforms: {
+            tDiffuse: { value: null },
+            uResolution: { value: new THREE.Vector2(this.width, this.height) },
+            uDistortion: { value: 1.0 }
+          },
+          vertexShader: `
+            varying vec2 vUv;
+            void main() {
+              vUv = uv;
+              gl_Position = vec4(position, 1.0);
+            }
+          `,
+          fragmentShader: `
+            uniform sampler2D tDiffuse;
+            uniform vec2 uResolution;
+            uniform float uDistortion;
+            varying vec2 vUv;
+
+            void main() {
+              vec2 uv = vUv;
+              float band = 0.08;
+              float t = 0.0;
+              float dir = 0.0;
+
+              if (uv.y > 1.0 - band) {
+                t = (uv.y - (1.0 - band)) / band;
+                dir = -1.0;
+              } else if (uv.y < band) {
+                t = (band - uv.y) / band;
+                dir = 1.0;
+              }
+
+              if (t > 0.0) {
+                float sag = 1.0 - sqrt(max(0.0, 1.0 - t * t));
+                float push = sag * band * 1.0;
+                uv.y += dir * push;
+
+                // 16-sample spectral dispersion
+                vec3 accColor = vec3(0.0);
+                float totalWeight = 0.0;
+
+                for (int i = 0; i < 16; i++) {
+                  float sampleT = float(i) / 15.0;
+                  float disp = (sampleT - 0.5) * 0.01 * uDistortion * 30.0 / uResolution.y;
+                  vec2 sUv = uv + vec2(0.0, disp);
+                  vec3 c = texture2D(tDiffuse, sUv).rgb;
+
+                  float rWeight = smoothstep(0.8, 0.2, sampleT);
+                  float gWeight = smoothstep(0.0, 0.5, sampleT) * smoothstep(1.0, 0.5, sampleT);
+                  float bWeight = smoothstep(0.2, 0.8, sampleT);
+                  vec3 w = vec3(rWeight, gWeight, bWeight);
+
+                  accColor += c * w;
+                  totalWeight += (w.r + w.g + w.b) / 3.0;
+                }
+                vec3 finalColor = accColor / max(0.001, totalWeight);
+                // Convert to sRGB
+                finalColor = pow(finalColor, vec3(1.0 / 2.2));
+                gl_FragColor = vec4(finalColor, 1.0);
+              } else {
+                vec3 c = texture2D(tDiffuse, uv).rgb;
+                c = pow(c, vec3(1.0 / 2.2));
+                gl_FragColor = vec4(c, 1.0);
+              }
+            }
+          `
+        };
+
+        this.postMat = new THREE.ShaderMaterial(glassLensShader);
+        const quad = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), this.postMat);
+        this.postScene.add(quad);
+      }
+
+      buildLayout() {
+        this.contentGroup = new THREE.Group();
+        this.scene.add(this.contentGroup);
+
+        this.cols = this.width > 1024 ? 3 : (this.width > 640 ? 2 : 1);
+        const pad = 8;
+        const colGap = 8;
+        const rowGap = 40;
+        this.tileWidth = (this.width - 16 - (this.cols - 1) * colGap) / this.cols;
+        this.tileHeight = this.tileWidth * (9 / 16);
+
+        // Headline
+        this.headlineY = 200;
+        this.createHeadline();
+
+        // Grid of 5 tiles
+        const gridStartY = this.headlineY + 80;
+        this.tiles = [];
+
+        PORTFOLIO_DATA.projects.forEach((proj, idx) => {
+          const col = idx % this.cols;
+          const row = Math.floor(idx / this.cols);
+
+          const x = pad + col * (this.tileWidth + colGap);
+          const y = gridStartY + row * (this.tileHeight + rowGap + 50);
+
+          const tileGroup = new THREE.Group();
+          tileGroup.position.set(x + this.tileWidth / 2, -(y + this.tileHeight / 2), 0);
+
+          // Tile shader material
+          const mediaItem = mediaManager.items[idx];
+          const tileMat = new THREE.ShaderMaterial({
+            uniforms: {
+              uTex: { value: mediaItem.activeTexture },
+              uTex2: { value: mediaItem.videoTexture || mediaItem.activeTexture },
+              uMix: { value: 0.0 },
+              uReveal: { value: 0.0 },
+              uTime: { value: 0.0 }
+            },
+            vertexShader: `
+              varying vec2 vUv;
+              void main() {
+                vUv = uv;
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+              }
+            `,
+            fragmentShader: `
+              uniform sampler2D uTex;
+              uniform sampler2D uTex2;
+              uniform float uMix;
+              uniform float uReveal;
+              uniform float uTime;
+              varying vec2 vUv;
+
+              void main() {
+                float sweep = fract(uTime * 0.6);
+                float band = smoothstep(0.18, 0.0, abs((vUv.x + vUv.y) * 0.5 - sweep)) * 0.035;
+                vec3 skeleton = vec3(0.085 + band);
+
+                vec4 c1 = texture2D(uTex, vUv);
+                vec4 c2 = texture2D(uTex2, vUv);
+                vec3 media = mix(c1.rgb, c2.rgb, uMix);
+
+                vec3 finalCol = mix(skeleton, media, uReveal);
+                gl_FragColor = vec4(finalCol, 1.0);
+              }
+            `
+          });
+
+          const mesh = new THREE.Mesh(new THREE.PlaneGeometry(this.tileWidth, this.tileHeight), tileMat);
+          tileGroup.add(mesh);
+
+          // Frosted chip top-left (8px inset)
+          const chip = this.createChip(idx, proj, this.tileWidth, this.tileHeight);
+          tileGroup.add(chip);
+
+          // Subtitles: Title and Category, Deploy
+          const labelGroup = this.createTileLabels(proj, this.tileWidth, this.tileHeight);
+          tileGroup.add(labelGroup);
+
+          tileGroup.userData = {
+            index: idx,
+            project: proj,
+            mesh,
+            material: tileMat,
+            mediaItem,
+            col,
+            row,
+            yTop: y,
+            yBottom: y + this.tileHeight
+          };
+
+          this.contentGroup.add(tileGroup);
+          this.tiles.push(tileGroup);
+        });
+
+        const totalRows = Math.ceil(5 / this.cols);
+        const lastRowY = gridStartY + (totalRows - 1) * (this.tileHeight + rowGap + 50);
+        this.footerY = lastRowY + this.tileHeight + 240;
+        this.createFooter();
+
+        this.pageHeight = this.footerY + 100;
+        this.scrollOffset = 0;
+        this.targetScrollOffset = 0;
+        this.scrollVelocity = 0;
+      }
+
+      createHeadline() {
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.min(this.width, 1000) * 2;
+        canvas.height = 120 * 2;
+        const ctx = canvas.getContext('2d');
+        ctx.scale(2, 2);
+
+        this.headlineCanvas = canvas;
+        this.headlineCtx = ctx;
+
+        this.headlineTex = new THREE.CanvasTexture(canvas);
+        this.headlineTex.colorSpace = THREE.SRGBColorSpace;
+        const mat = new THREE.MeshBasicMaterial({ map: this.headlineTex, transparent: true });
+        const mesh = new THREE.Mesh(new THREE.PlaneGeometry(canvas.width / 2, canvas.height / 2), mat);
+        mesh.position.set(this.width / 2, -this.headlineY, 0);
+        this.contentGroup.add(mesh);
+        this.headlineMesh = mesh;
+      }
+
+      renderHeadlineText(progress = 1.0) {
+        const ctx = this.headlineCtx;
+        const w = this.headlineCanvas.width / 2;
+        ctx.clearRect(0, 0, w, 120);
+
+        const glyphs = ['.', ':', '·', ',', ';', '_'];
+        const part1 = "Uma seleção de ";
+        const part2 = "projetos com IA, dados e design";
+        const full = part1 + part2;
+
+        ctx.textBaseline = 'middle';
+        ctx.textAlign = 'center';
+
+        let resolvedStr = "";
+        for (let i = 0; i < full.length; i++) {
+          const char = full[i];
+          if (char === ' ') {
+            resolvedStr += ' ';
+            continue;
+          }
+          const threshold = 0.7 * (i / full.length) + 0.3 * Math.random();
+          if (progress >= threshold) {
+            resolvedStr += char;
+          } else {
+            resolvedStr += glyphs[Math.floor(Math.random() * glyphs.length)];
+          }
+        }
+
+        const resolvedPart1 = resolvedStr.slice(0, part1.length);
+        const resolvedPart2 = resolvedStr.slice(part1.length);
+
+        if (this.width <= 640) {
+          ctx.font = '500 16px Geist, sans-serif';
+          ctx.fillStyle = '#ededeb';
+          ctx.fillText("Uma seleção de projetos com", w / 2, 45);
+
+          ctx.font = '400 17px Newsreader, ui-serif, Georgia, serif';
+          ctx.fillText("IA, dados e design", w / 2, 70);
+        } else {
+          ctx.font = '500 16px Geist, sans-serif';
+          const w1 = ctx.measureText(resolvedPart1).width;
+          ctx.font = '400 17px Newsreader, ui-serif, Georgia, serif';
+          const w2 = ctx.measureText(resolvedPart2).width;
+          const startX = (w - (w1 + w2)) / 2;
+
+          ctx.textAlign = 'left';
+          ctx.font = '500 16px Geist, sans-serif';
+          ctx.fillStyle = '#ededeb';
+          ctx.fillText(resolvedPart1, startX, 60);
+
+          ctx.font = '400 17px Newsreader, ui-serif, Georgia, serif';
+          ctx.fillText(resolvedPart2, startX + w1, 60);
+        }
+
+        this.headlineTex.needsUpdate = true;
+      }
+
+      createChip(idx, proj, w, h) {
+        const chipW = 160;
+        const chipH = 28;
+        const canvas = document.createElement('canvas');
+        canvas.width = chipW * 2;
+        canvas.height = chipH * 2;
+        const ctx = canvas.getContext('2d');
+        ctx.scale(2, 2);
+
+        // Frosted label
+        ctx.fillStyle = 'rgba(28, 28, 30, 0.75)';
+        ctx.beginPath();
+        ctx.roundRect(0, 0, chipW, chipH, 4);
+        ctx.fill();
+
+        ctx.fillStyle = '#ededeb';
+        ctx.font = '500 12px Geist, sans-serif';
+        ctx.textBaseline = 'middle';
+        ctx.textAlign = 'left';
+        const numStr = String(idx + 1).padStart(2, '0');
+        ctx.fillText(`${numStr}  ${proj.category}`, 8, chipH / 2);
+
+        const tex = new THREE.CanvasTexture(canvas);
+        tex.colorSpace = THREE.SRGBColorSpace;
+        const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true });
+        const mesh = new THREE.Mesh(new THREE.PlaneGeometry(chipW, chipH), mat);
+        mesh.position.set(-w / 2 + 8 + chipW / 2, h / 2 - 8 - chipH / 2, 1);
+        return mesh;
+      }
+
+      createTileLabels(proj, w, h) {
+        const group = new THREE.Group();
+        const canvas = document.createElement('canvas');
+        canvas.width = w * 2;
+        canvas.height = 40 * 2;
+        const ctx = canvas.getContext('2d');
+        ctx.scale(2, 2);
+
+        // Title (Geist 500 12px, ink)
+        ctx.fillStyle = '#ededeb';
+        ctx.font = '500 12px Geist, sans-serif';
+        ctx.textBaseline = 'top';
+        ctx.textAlign = 'left';
+        ctx.fillText(proj.title, 0, 0);
+
+        // Category, Deploy (Newsreader 13px, mute)
+        ctx.fillStyle = '#8a8a88';
+        ctx.font = '13px Newsreader, ui-serif, Georgia, serif';
+        ctx.fillText(`${proj.category}, ${proj.deploy}`, 0, 18);
+
+        const tex = new THREE.CanvasTexture(canvas);
+        tex.colorSpace = THREE.SRGBColorSpace;
+        const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true });
+        const mesh = new THREE.Mesh(new THREE.PlaneGeometry(w, 40), mat);
+        mesh.position.set(0, -h / 2 - 12 - 20, 1);
+        group.add(mesh);
+
+        return group;
+      }
+
+      createFooter() {
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.min(this.width, 1000) * 2;
+        canvas.height = 40 * 2;
+        const ctx = canvas.getContext('2d');
+        ctx.scale(2, 2);
+
+        ctx.fillStyle = '#8a8a88';
+        ctx.font = '13px Newsreader, ui-serif, Georgia, serif';
+        ctx.textBaseline = 'middle';
+
+        if (this.width <= 640) {
+          ctx.textAlign = 'left';
+          ctx.fillText('Bruna Kury', 16, 20);
+          ctx.textAlign = 'right';
+          ctx.fillText('Índice de projetos', (canvas.width / 2) - 16, 20);
+        } else {
+          ctx.textAlign = 'center';
+          ctx.fillText('Bruna Kury — Índice de projetos', (canvas.width / 4), 20);
+        }
+
+        const tex = new THREE.CanvasTexture(canvas);
+        tex.colorSpace = THREE.SRGBColorSpace;
+        const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true });
+        const mesh = new THREE.Mesh(new THREE.PlaneGeometry(canvas.width / 2, 40), mat);
+        mesh.position.set(this.width / 2, -this.footerY, 0);
+        this.contentGroup.add(mesh);
+      }
+
+      setupEntrance() {
+        this.renderHeadlineText(0.0);
+
+        if (prefersReducedMotion) {
+          this.renderHeadlineText(1.0);
+          this.tiles.forEach(t => {
+            t.userData.material.uniforms.uReveal.value = 1.0;
+          });
+          return;
+        }
+
+        // Headline letters resolve
+        const obj = { p: 0 };
+        gsap.to(obj, {
+          p: 1,
+          duration: 1.1,
+          ease: 'power2.out',
+          onUpdate: () => this.renderHeadlineText(obj.p)
+        });
+
+        // Tiles entrance
+        this.tiles.forEach(t => {
+          const delay = 0.35 + 0.08 * t.userData.col + 0.06 * t.userData.row;
+          const origY = t.position.y;
+          t.position.y -= 60;
+
+          gsap.to(t.position, {
+            y: origY,
+            duration: 1.2,
+            delay,
+            ease: 'expo.out'
+          });
+
+          gsap.to(t.userData.material.uniforms.uReveal, {
+            value: 1.0,
+            duration: 0.9,
+            delay,
+            ease: 'power2.out'
+          });
+        });
+      }
+
+      setupInteractions() {
+        this.bubble = document.getElementById('projects-ver-bubble');
+        this.quickBubbleX = gsap.quickTo(this.bubble, 'x', { duration: 0.5, ease: 'power3.out' });
+        this.quickBubbleY = gsap.quickTo(this.bubble, 'y', { duration: 0.5, ease: 'power3.out' });
+
+        this.lightbox = document.getElementById('projects-lightbox');
+        this.lightboxMediaWrap = document.getElementById('lightbox-media-container');
+        this.lightboxTitle = document.getElementById('lightbox-title');
+        this.lightboxDeploy = document.getElementById('lightbox-deploy');
+        this.lightboxDesc = document.getElementById('lightbox-desc');
+        this.lightboxCloseBtn = document.getElementById('lightbox-close-btn');
+        this.lightboxLiveBtn = document.getElementById('lightbox-live-btn');
+
+        this.lightboxCloseBtn.addEventListener('click', () => this.closeLightbox());
+        this.lightbox.addEventListener('click', (e) => {
+          if (e.target === this.lightbox) this.closeLightbox();
+        });
+        window.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && this.lightbox.classList.contains('open')) {
+            this.closeLightbox();
+          }
+        });
+
+        // Pointer move for hover on desktop
+        window.addEventListener('pointermove', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          this.quickBubbleX(e.clientX);
+          this.quickBubbleY(e.clientY);
+
+          if (this.width > 1024 && !isTouch) {
+            const worldY = e.clientY + this.scrollOffset;
+            const worldX = e.clientX;
+
+            let hovered = null;
+            this.tiles.forEach(t => {
+              const xLeft = t.position.x - this.tileWidth / 2;
+              const xRight = t.position.x + this.tileWidth / 2;
+              const yTop = -t.position.y - this.tileHeight / 2;
+              const yBottom = -t.position.y + this.tileHeight / 2;
+
+              if (worldX >= xLeft && worldX <= xRight && worldY >= yTop && worldY <= yBottom) {
+                hovered = t;
+              }
+            });
+
+            if (hovered !== this.hoveredTile) {
+              if (this.hoveredTile) {
+                const prev = this.hoveredTile;
+                gsap.to(prev.scale, { x: 1.0, y: 1.0, duration: 0.35, ease: 'power2.out' });
+              }
+              this.hoveredTile = hovered;
+              if (this.hoveredTile) {
+                const next = this.hoveredTile;
+                gsap.to(next.scale, { x: 1.025, y: 1.025, duration: 0.35, ease: 'power2.out' });
+                gsap.to(this.bubble, { scale: 1, opacity: 1, duration: 0.75, ease: 'power4.out' });
+              } else {
+                gsap.to(this.bubble, { scale: 0.6, opacity: 0, duration: 0.6 });
+              }
+            }
+          }
+        });
+
+        // Click on tile opens lightbox
+        this.wrap.addEventListener('click', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          const worldY = e.clientY + this.scrollOffset;
+          const worldX = e.clientX;
+
+          this.tiles.forEach(t => {
+            const xLeft = t.position.x - this.tileWidth / 2;
+            const xRight = t.position.x + this.tileWidth / 2;
+            const yTop = -t.position.y - this.tileHeight / 2;
+            const yBottom = -t.position.y + this.tileHeight / 2;
+
+            if (worldX >= xLeft && worldX <= xRight && worldY >= yTop && worldY <= yBottom) {
+              this.openLightbox(t.userData.project, t.userData.mediaItem);
+            }
+          });
+        });
+
+        // Wheel and touch scroll
+        window.addEventListener('wheel', (e) => {
+          if (!this.container.classList.contains('active') || this.lightbox.classList.contains('open')) return;
+          this.targetScrollOffset += e.deltaY;
+          this.clampScroll();
+        }, { passive: true });
+
+        let touchStartY = 0;
+        let lastTouchY = 0;
+        window.addEventListener('touchstart', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          touchStartY = e.touches[0].clientY;
+          lastTouchY = touchStartY;
+          this.scrollVelocity = 0;
+        }, { passive: true });
+
+        window.addEventListener('touchmove', (e) => {
+          if (!this.container.classList.contains('active') || this.lightbox.classList.contains('open')) return;
+          const dy = e.touches[0].clientY - lastTouchY;
+          lastTouchY = e.touches[0].clientY;
+          this.targetScrollOffset -= dy;
+          this.scrollVelocity = -dy;
+          this.clampScroll();
+        }, { passive: true });
+      }
+
+      clampScroll() {
+        const maxScroll = Math.max(0, this.pageHeight - this.height);
+        this.targetScrollOffset = Math.max(0, Math.min(maxScroll, this.targetScrollOffset));
+      }
+
+      openLightbox(proj, mediaItem) {
+        this.lightboxTitle.textContent = proj.title;
+        this.lightboxDeploy.textContent = `${proj.category}, ${proj.deploy}`;
+        this.lightboxDesc.textContent = proj.desc;
+
+        if (proj.url) {
+          this.lightboxLiveBtn.href = proj.url;
+          this.lightboxLiveBtn.style.display = 'inline-flex';
+        } else {
+          this.lightboxLiveBtn.style.display = 'none';
+        }
+
+        this.lightboxMediaWrap.innerHTML = '';
+        if (mediaItem.hasFrame && mediaItem.video && mediaItem.video.src) {
+          const v = document.createElement('video');
+          v.src = mediaItem.video.src;
+          v.muted = true;
+          v.loop = true;
+          v.playsInline = true;
+          v.autoplay = true;
+          this.lightboxMediaWrap.appendChild(v);
+          this.lightboxVideo = v;
+        } else if (mediaItem.posterImage) {
+          const img = document.createElement('img');
+          img.src = mediaItem.posterImage.src;
+          this.lightboxMediaWrap.appendChild(img);
+        } else {
+          const c = createProceduralPoster(proj);
+          this.lightboxMediaWrap.appendChild(c);
+        }
+
+        this.lightbox.classList.add('open');
+      }
+
+      closeLightbox() {
+        this.lightbox.classList.remove('open');
+        if (this.lightboxVideo) {
+          this.lightboxVideo.pause();
+          this.lightboxVideo.src = '';
+          this.lightboxVideo = null;
+        }
+      }
+
+      onResize() {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+        const camZ = (this.height / 2) / Math.tan((17.5 * Math.PI) / 180);
+        this.camera.aspect = this.width / this.height;
+        this.camera.position.set(this.width / 2, -this.height / 2, camZ);
+        this.camera.lookAt(this.width / 2, -this.height / 2, 0);
+        this.camera.updateProjectionMatrix();
+
+        this.renderer.setSize(this.width, this.height);
+        this.renderTarget.setSize(this.width * Math.min(window.devicePixelRatio, 2), this.height * Math.min(window.devicePixelRatio, 2));
+        this.postMat.uniforms.uResolution.value.set(this.width, this.height);
+
+        if (this.contentGroup) {
+          while (this.contentGroup.children.length > 0) {
+            this.contentGroup.remove(this.contentGroup.children[0]);
+          }
+          this.buildLayout();
+          this.tiles.forEach(t => {
+            t.userData.material.uniforms.uReveal.value = 1.0;
+          });
+          this.renderHeadlineText(1.0);
+        }
+      }
+
+      start() {
+        this.active = true;
+        this.animate();
+      }
+
+      stop() {
+        this.active = false;
+        if (this.rafId) cancelAnimationFrame(this.rafId);
+      }
+
+      animate() {
+        if (!this.active) return;
+        this.rafId = requestAnimationFrame(() => this.animate());
+
+        // Smooth scroll easing
+        this.scrollVelocity *= 0.95;
+        this.targetScrollOffset += this.scrollVelocity;
+        this.clampScroll();
+
+        this.scrollOffset += (this.targetScrollOffset - this.scrollOffset) * 0.12;
+        this.contentGroup.position.y = this.scrollOffset;
+
+        // Mobile / touch tiles display prints; videos are reserved for when clicked
+
+        // Shimmer animation time
+        const time = performance.now() * 0.001;
+        this.tiles.forEach(t => {
+          t.userData.material.uniforms.uTime.value = time;
+          // Update textures if changed
+          if (t.userData.material.uniforms.uTex.value !== t.userData.mediaItem.activeTexture) {
+            t.userData.material.uniforms.uTex.value = t.userData.mediaItem.activeTexture;
+          }
+          if (t.userData.mediaItem.videoTexture && t.userData.material.uniforms.uTex2.value !== t.userData.mediaItem.videoTexture) {
+            t.userData.material.uniforms.uTex2.value = t.userData.mediaItem.videoTexture;
+          }
+        });
+
+        // 1st pass: Render scene to renderTarget
+        this.renderer.setRenderTarget(this.renderTarget);
+        this.renderer.render(this.scene, this.camera);
+
+        // 2nd pass: Fullscreen glass-lens refraction pass
+        this.renderer.setRenderTarget(null);
+        this.postMat.uniforms.tDiffuse.value = this.renderTarget.texture;
+        this.renderer.render(this.postScene, this.postCamera);
+      }
+    }
+
+    /* ==========================================================================
+       5. View 3: About View (Chrome Bot + Magnetic Text Track)
+       ========================================================================== */
+    class AboutView {
+      constructor(container) {
+        this.container = container;
+        this.wrap = container.querySelector('#about-canvas-wrap');
+        this.init();
+      }
+
+      init() {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+
+        this.scene = new THREE.Scene();
+        this.scene.background = new THREE.Color(0x0c0c0d);
+
+        this.camera = new THREE.PerspectiveCamera(45, this.width / this.height, 0.1, 100);
+        this.camera.position.z = 13;
+
+        this.renderer = new THREE.WebGLRenderer({ antialias: true });
+        this.renderer.setClearColor(0x0c0c0d, 1);
+        this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        this.renderer.setSize(this.width, this.height);
+        this.renderer.outputColorSpace = THREE.SRGBColorSpace;
+        this.renderer.toneMapping = THREE.NoToneMapping;
+        this.wrap.appendChild(this.renderer.domElement);
+
+        // Render target for lens disc click refraction
+        this.sceneRenderTarget = new THREE.WebGLRenderTarget(this.width * Math.min(window.devicePixelRatio, 2), this.height * Math.min(window.devicePixelRatio, 2), {
+          type: THREE.HalfFloatType,
+          minFilter: THREE.LinearFilter,
+          magFilter: THREE.LinearFilter
+        });
+
+        this.setupEnvironment();
+        this.setupRobot();
+        this.setupLensDisc();
+        this.setupTextTrack();
+        this.setupInteractions();
+
+        window.addEventListener('resize', () => this.onResize());
+      }
+
+      setupEnvironment() {
+        const envScene = new THREE.Scene();
+        envScene.background = new THREE.Color(0x0a0a0b);
+
+        const addPanel = (w, h, pos, rot, intensity) => {
+          const mat = new THREE.MeshBasicMaterial({
+            color: new THREE.Color(intensity, intensity, intensity),
+            side: THREE.DoubleSide
+          });
+          const mesh = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
+          mesh.position.set(...pos);
+          mesh.rotation.set(...rot);
+          envScene.add(mesh);
+        };
+
+        // 6 Emissive white panels
+        addPanel(14, 5, [0, 6, 0], [Math.PI / 2, 0, 0], 1.1); // ceiling
+        addPanel(3.2, 10, [-6, 0, 0], [0, Math.PI / 2, 0], 1.0); // strip left
+        addPanel(2.4, 10, [6, 0, 0], [0, -Math.PI / 2, 0], 0.85); // strip right
+        addPanel(12, 2.2, [0, -1.5, -6], [0, 0, 0], 0.6); // behind
+        addPanel(5, 4, [3, 2.5, 6], [Math.PI, 0, 0], 0.8); // in front
+        addPanel(14, 6, [0, -6, 0], [-Math.PI / 2, 0, 0], 0.22); // floor
+
+        const pmrem = new THREE.PMREMGenerator(this.renderer);
+        this.scene.environment = pmrem.fromScene(envScene).texture;
+        pmrem.dispose();
+      }
+
+      setupRobot() {
+        this.botGroup = new THREE.Group();
+        this.botMaterials = [];
+
+        // Uniforms for liquid reveal and hover glow
+        this.botUniforms = {
+          uReveal: { value: prefersReducedMotion ? 1.0 : 0.0 },
+          uTime: { value: 0.0 },
+          uHoverPoint: { value: new THREE.Vector3(0, 0, 0) },
+          uHoverFactor: { value: 0.0 },
+          uBBoxMin: { value: new THREE.Vector3(-1.5, -2.0, -1.5) },
+          uBBoxMax: { value: new THREE.Vector3(1.5, 2.0, 1.5) }
+        };
+
+        const injectBotShader = (mat) => {
+          this.botMaterials.push(mat);
+          mat.onBeforeCompile = (shader) => {
+            shader.uniforms.uReveal = this.botUniforms.uReveal;
+            shader.uniforms.uTime = this.botUniforms.uTime;
+            shader.uniforms.uHoverPoint = this.botUniforms.uHoverPoint;
+            shader.uniforms.uHoverFactor = this.botUniforms.uHoverFactor;
+            shader.uniforms.uBBoxMin = this.botUniforms.uBBoxMin;
+            shader.uniforms.uBBoxMax = this.botUniforms.uBBoxMax;
+
+            shader.vertexShader = `
+              varying vec3 vWorldPos;
+              ${shader.vertexShader}
+            `.replace(
+              '#include <worldpos_vertex>',
+              `
+              #include <worldpos_vertex>
+              vWorldPos = (modelMatrix * vec4(transformed, 1.0)).xyz;
+              `
+            );
+
+            shader.fragmentShader = `
+              uniform float uReveal;
+              uniform float uTime;
+              uniform vec3 uHoverPoint;
+              uniform float uHoverFactor;
+              uniform vec3 uBBoxMin;
+              uniform vec3 uBBoxMax;
+              varying vec3 vWorldPos;
+
+              float hash(vec3 p) {
+                p = fract(p * 0.3183099 + 0.1);
+                p *= 17.0;
+                return fract(p.x * p.y * p.z * (p.x + p.y + p.z));
+              }
+              float noise(vec3 x) {
+                vec3 p = floor(x);
+                vec3 f = fract(x);
+                f = f * f * (3.0 - 2.0 * f);
+                return mix(mix(mix(hash(p + vec3(0,0,0)), hash(p + vec3(1,0,0)), f.x),
+                               mix(hash(p + vec3(0,1,0)), hash(p + vec3(1,1,0)), f.x), f.y),
+                           mix(mix(hash(p + vec3(0,0,1)), hash(p + vec3(1,0,1)), f.x),
+                               mix(hash(p + vec3(0,1,1)), hash(p + vec3(1,1,1)), f.x), f.y), f.z);
+              }
+
+              ${shader.fragmentShader}
+            `.replace(
+              '#include <dithering_fragment>',
+              `
+              #include <dithering_fragment>
+
+              float band = 0.97;
+              float n = noise(vWorldPos * 2.5 + vec3(0.0, uTime * 0.5, 0.0));
+              float frontY = mix(uBBoxMin.y - band, uBBoxMax.y + 0.25 * band, uReveal) + (n - 0.5) * 0.95 * (1.0 - uReveal);
+
+              if (vWorldPos.y > frontY) {
+                discard;
+              }
+
+              if (vWorldPos.y > frontY - band) {
+                float d = (frontY - vWorldPos.y) / band;
+                vec3 liquidTint = vec3(0.56, 0.63, 1.0);
+                gl_FragColor.rgb = mix(gl_FragColor.rgb, liquidTint * 1.5, (1.0 - d) * 0.6);
+
+                float meniscus = pow(1.0 - clamp(d, 0.0, 1.0), 3.0) * 1.4;
+                gl_FragColor.rgb += vec3(0.086, 0.129, 1.0) * meniscus;
+              }
+
+              // Hover glow
+              float hitDist = length(vWorldPos - uHoverPoint);
+              if (hitDist < 1.09) {
+                float glow = pow(1.0 - hitDist / 1.09, 3.0) * 0.4 * uHoverFactor;
+                gl_FragColor.rgb += vec3(0.086, 0.129, 1.0) * glow;
+              }
+              `
+            );
+          };
+        };
+
+        // 1. Head: sphere (1.1, 1, 0.98) chrome
+        const headGeo = new THREE.SphereGeometry(1, 48, 36);
+        headGeo.scale(1.1, 1.0, 0.98);
+        const headMat = new THREE.MeshPhysicalMaterial({ color: 0xffffff, metalness: 1.0, roughness: 0.07 });
+        injectBotShader(headMat);
+        const head = new THREE.Mesh(headGeo, headMat);
+        this.botGroup.add(head);
+
+        // 2. Visor: front patch 1.5% larger, dark glossy clearcoat
+        const phiStart = Math.PI / 2 - 1.02;
+        const phiLen = 2.04;
+        const thetaStart = Math.PI / 2 - 0.5;
+        const thetaLen = 1.0;
+        const visorGeo = new THREE.SphereGeometry(1, 48, 36, phiStart, phiLen, thetaStart, thetaLen);
+        visorGeo.scale(1.1 * 1.015, 1.0 * 1.015, 0.98 * 1.015);
+        const visorMat = new THREE.MeshPhysicalMaterial({
+          color: 0x040405,
+          metalness: 0.3,
+          roughness: 0.12,
+          clearcoat: 1.0,
+          clearcoatRoughness: 0.04
+        });
+        injectBotShader(visorMat);
+        const visor = new THREE.Mesh(visorGeo, visorMat);
+        this.botGroup.add(visor);
+
+        // 3. Eyes: capsules at x +-0.3, y 0.03, depth flattened 45%, unlit #f2f2ee
+        const eyeGeo = new THREE.CapsuleGeometry(0.075, 0.2, 16, 16);
+        eyeGeo.scale(1, 1, 0.45);
+        const eyeMat = new THREE.MeshBasicMaterial({ color: 0xf2f2ee });
+        injectBotShader(eyeMat);
+
+        this.leftEye = new THREE.Mesh(eyeGeo, eyeMat);
+        this.leftEye.position.set(-0.3, 0.03, 0.94);
+        this.leftEye.rotation.z = Math.PI / 2;
+        this.botGroup.add(this.leftEye);
+
+        this.rightEye = new THREE.Mesh(eyeGeo, eyeMat);
+        this.rightEye.position.set(0.3, 0.03, 0.94);
+        this.rightEye.rotation.z = Math.PI / 2;
+        this.botGroup.add(this.rightEye);
+
+        // 4. Antenna: stem at y 1.15, ball at y 1.38
+        const stemGeo = new THREE.CylinderGeometry(0.022, 0.03, 0.42, 16);
+        const stem = new THREE.Mesh(stemGeo, headMat);
+        stem.position.set(0, 1.15, 0);
+        this.botGroup.add(stem);
+
+        const ballGeo = new THREE.SphereGeometry(0.095, 24, 24);
+        const ball = new THREE.Mesh(ballGeo, headMat);
+        ball.position.set(0, 1.38, 0);
+        this.botGroup.add(ball);
+
+        // 5. Ears: tori at x +-1.1 with dark caps
+        const earGeo = new THREE.TorusGeometry(0.2, 0.065, 16, 32);
+        const leftEar = new THREE.Mesh(earGeo, headMat);
+        leftEar.position.set(-1.1, 0, 0);
+        leftEar.rotation.y = Math.PI / 2;
+        this.botGroup.add(leftEar);
+
+        const rightEar = new THREE.Mesh(earGeo, headMat);
+        rightEar.position.set(1.1, 0, 0);
+        rightEar.rotation.y = Math.PI / 2;
+        this.botGroup.add(rightEar);
+
+        const capGeo = new THREE.CylinderGeometry(0.15, 0.15, 0.05, 24);
+        const leftCap = new THREE.Mesh(capGeo, visorMat);
+        leftCap.position.set(-1.1, 0, 0);
+        leftCap.rotation.z = Math.PI / 2;
+        this.botGroup.add(leftCap);
+
+        const rightCap = new THREE.Mesh(capGeo, visorMat);
+        rightCap.position.set(1.1, 0, 0);
+        rightCap.rotation.z = Math.PI / 2;
+        this.botGroup.add(rightCap);
+
+        // 6. Halo: torus at y -1.28, tilted 0.92 * 90 deg, spinning 0.35 rad/s
+        const haloGeo = new THREE.TorusGeometry(0.78, 0.05, 16, 48);
+        this.halo = new THREE.Mesh(haloGeo, headMat);
+        this.halo.position.set(0, -1.28, 0);
+        this.halo.rotation.x = 0.92 * (Math.PI / 2);
+        this.botGroup.add(this.halo);
+
+        // Centering
+        this.botGroup.position.set(0, 0, -1);
+        this.scene.add(this.botGroup);
+
+        this.calcBotScale();
+
+        // Reveal animation
+        if (!prefersReducedMotion) {
+          gsap.fromTo(this.botUniforms.uReveal, 
+            { value: 0 }, 
+            { value: 1, duration: 3.85, delay: 1.0, ease: 'power2.out' }
+          );
+        }
+
+        // Behaviour states
+        this.botRot = { x: 0, y: 0, z: 0 };
+        this.botTargetRot = { x: -0.62, y: 0.59, z: 0.2 };
+        if (this.width <= 640) this.botTargetRot = { x: 0, y: 0, z: 0 };
+
+        this.floatPhase = 0;
+        this.floatSpeed = 1.0;
+        this.floatAmplitude = 1.0;
+        this.isSleeping = false;
+        this.lastInputTime = performance.now();
+        this.hitReactionActive = false;
+        this.hitReactionIndex = 0;
+
+        this.setupBlink();
+      }
+
+      calcBotScale() {
+        let targetPx = 200;
+        if (this.width <= 640) {
+          targetPx = Math.min(100, this.width * 0.25);
+        } else if (this.width <= 1024) {
+          targetPx = 200 * 0.70;
+        } else if (this.width <= 1440) {
+          targetPx = 200 * 0.80;
+        }
+
+        const dist = 14; // camera at 13, bot at -1
+        const visH = 2 * dist * Math.tan((45 / 2) * Math.PI / 180);
+        const pxToWorld = visH / this.height;
+        const targetWorldHeight = targetPx * pxToWorld;
+
+        const rawBotHeight = 2.8; // roughly from halo to antenna ball
+        const s = targetWorldHeight / rawBotHeight;
+        this.botGroup.scale.set(s, s, s);
+      }
+
+      setupBlink() {
+        const scheduleNextBlink = () => {
+          const delay = 3000 + Math.random() * 2000;
+          setTimeout(() => {
+            if (!this.isSleeping && !this.hitReactionActive) {
+              gsap.to([this.leftEye.scale, this.rightEye.scale], {
+                y: 0.1,
+                duration: 0.09,
+                yoyo: true,
+                repeat: 1,
+                ease: 'power2.inOut',
+                onComplete: scheduleNextBlink
+              });
+            } else {
+              scheduleNextBlink();
+            }
+          }, delay);
+        };
+        scheduleNextBlink();
+      }
+
+      headShake() {
+        const tl = gsap.timeline();
+        tl.to(this.botGroup.position, { y: 0.22, duration: 0.09 })
+          .to(this.botGroup.position, { y: -0.18, duration: 0.12 })
+          .to(this.botGroup.position, { y: 0.10, duration: 0.11 })
+          .to(this.botGroup.position, { y: 0, duration: 0.18 });
+      }
+
+      setupLensDisc() {
+        const discShader = {
+          uniforms: {
+            tScene: { value: null },
+            uResolution: { value: new THREE.Vector2(this.width, this.height) },
+            uProgress: { value: 0.0 },
+            uScale: { value: 0.0 },
+            uAlpha: { value: 0.0 }
+          },
+          vertexShader: `
+            varying vec2 vUv;
+            void main() {
+              vUv = uv;
+              gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+          `,
+          fragmentShader: `
+            uniform sampler2D tScene;
+            uniform vec2 uResolution;
+            uniform float uProgress;
+            uniform float uScale;
+            uniform float uAlpha;
+            varying vec2 vUv;
+
+            void main() {
+              vec2 center = vec2(0.5);
+              float dist = distance(vUv, center);
+              if (dist > 0.5) discard;
+
+              float nd = dist / 0.5;
+              vec2 screenUv = gl_FragCoord.xy / uResolution;
+
+              // Pull toward centre
+              float zoomPull = 0.5 * 0.30 * nd * nd;
+              if (nd > 0.85) zoomPull += 0.2344 * ((nd - 0.85) / 0.15);
+
+              vec2 offset = normalize(vUv - center) * zoomPull;
+              vec2 sampledUv = screenUv - offset * 0.1;
+
+              // Chromatic dispersion from nd 0.6
+              vec3 sceneCol = vec3(0.0);
+              if (nd > 0.6) {
+                float disp = 1.64 * 0.004 * ((nd - 0.6) / 0.4);
+                sceneCol.r = texture2D(tScene, sampledUv + vec2(disp, 0.0)).r;
+                sceneCol.g = texture2D(tScene, sampledUv).g;
+                sceneCol.b = texture2D(tScene, sampledUv - vec2(disp, 0.0)).b;
+              } else {
+                sceneCol = texture2D(tScene, sampledUv).rgb;
+              }
+
+              // Light on top: white nova & #252ba7 rings
+              float nova = exp(-nd * nd * 12.0) * 0.285 * (11.0 / 17.0) * 1.15;
+              float ring1 = smoothstep(0.08, 0.0, abs(nd - 0.49)) * 0.9 * (11.0 / 17.0) * 1.8;
+              float ringRim = smoothstep(0.01, 0.0, abs(nd - 0.483));
+              float ringEdge = smoothstep(0.06, 0.0, abs(nd - 0.478)) * 1.053;
+
+              vec3 ringColor = vec3(0.145, 0.169, 0.655);
+              vec3 light = vec3(nova + ringRim) + ringColor * (ring1 + ringEdge);
+
+              gl_FragColor = vec4(sceneCol + light, uAlpha * (1.0 - smoothstep(0.48, 0.5, nd)));
+            }
+          `
+        };
+
+        this.discMat = new THREE.ShaderMaterial({
+          ...discShader,
+          transparent: true,
+          depthWrite: false
+        });
+
+        this.lensDisc = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), this.discMat);
+        this.lensDisc.position.set(0, 0, -8);
+        this.lensDisc.scale.set(0.001, 0.001, 1);
+        this.lensDisc.visible = false;
+        this.scene.add(this.lensDisc);
+      }
+
+      fireBotClick() {
+        if (this.botUniforms.uReveal.value < 0.8 || this.hitReactionActive) return;
+        this.hitReactionActive = true;
+
+        // Lens disc animation
+        this.lensDisc.visible = true;
+        this.discMat.uniforms.uAlpha.value = 1.0;
+
+        const discObj = { scale: 0.001 };
+        gsap.to(discObj, {
+          scale: 10,
+          duration: 4.0,
+          ease: 'expo.out',
+          onUpdate: () => {
+            this.lensDisc.scale.set(discObj.scale, discObj.scale, 1);
+            if (discObj.scale > 6.14 && !discObj.dissolving) {
+              discObj.dissolving = true;
+              gsap.to(this.discMat.uniforms.uAlpha, {
+                value: 0,
+                duration: 0.8975,
+                ease: 'sine.inOut',
+                onComplete: () => {
+                  this.lensDisc.visible = false;
+                  this.lensDisc.scale.set(0.001, 0.001, 1);
+                }
+              });
+            }
+          }
+        });
+
+        // Alternating reaction: 0: Recoil, 1: Spin
+        if (this.hitReactionIndex % 2 === 0) {
+          // Recoil
+          gsap.to([this.leftEye.scale, this.rightEye.scale], { y: 0.1, duration: 0.16, yoyo: true, repeat: 1 });
+          gsap.to(this.botRot, {
+            x: -0.45,
+            y: 0.18,
+            duration: 0.16,
+            ease: 'power3.out',
+            onComplete: () => {
+              gsap.to(this.botRot, {
+                x: 0,
+                y: 0,
+                duration: 0.9,
+                ease: 'elastic.out(1, 0.45)',
+                onComplete: () => {
+                  this.headShake();
+                  this.hitReactionActive = false;
+                }
+              });
+            }
+          });
+        } else {
+          // Spin
+          gsap.to(this.botRot, {
+            y: Math.PI * 2,
+            z: 0.25,
+            duration: 1.1,
+            ease: 'power3.inOut',
+            onComplete: () => {
+              this.botRot.y = 0;
+              gsap.to(this.botRot, {
+                z: 0,
+                duration: 0.7,
+                ease: 'elastic.out(1, 0.5)',
+                onComplete: () => {
+                  this.headShake();
+                  this.hitReactionActive = false;
+                }
+              });
+            }
+          });
+        }
+        this.hitReactionIndex++;
+      }
+
+      setupTextTrack() {
+        this.textGroup = new THREE.Group();
+        this.textGroup.position.set(0, 0, -8);
+        this.scene.add(this.textGroup);
+
+        // Distance from camera (z 13) to text plane (z -8) is 21
+        const dist = 21;
+        this.visTextH = 2 * dist * Math.tan((45 / 2) * Math.PI / 180);
+        this.textPx = (px) => px * (this.visTextH / this.height);
+
+        // Oval keep-out zone
+        let ovalFactor = 1.0;
+        if (this.width <= 640) ovalFactor = 0.7875;
+        this.ovalRx = 3.4 * ovalFactor;
+        this.ovalRy = 4.0543 * ovalFactor;
+        this.ovalPadding = 0.35;
+
+        this.buildHeadline();
+        this.buildStops();
+
+        // "ROLE →" hint
+        const hint = document.getElementById('about-hint');
+        if (hint) {
+          gsap.fromTo(hint, 
+            { x: -8, opacity: 0 }, 
+            { x: 0, opacity: 1, duration: 0.9, delay: 1.6, ease: 'expo.out' }
+          );
+        }
+      }
+
+      wrapTextToLines(text, font, maxWidth) {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.font = font;
+
+        if (ctx.measureText(text).width <= maxWidth) {
+          return [text];
+        }
+
+        const words = text.split(' ');
+        const lines = [];
+        let current = '';
+
+        for (let i = 0; i < words.length; i++) {
+          const test = current ? (current + ' ' + words[i]) : words[i];
+          if (ctx.measureText(test).width > maxWidth && current) {
+            lines.push(current);
+            current = words[i];
+          } else {
+            current = test;
+          }
+        }
+        if (current) lines.push(current);
+        return lines;
+      }
+
+      buildHeadline() {
+        const headlineW = this.width;
+        const headlineH = this.height;
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.min(2400, headlineW * 2);
+        canvas.height = Math.min(1800, headlineH * 2);
+        const ctx = canvas.getContext('2d');
+        ctx.scale(canvas.width / headlineW, canvas.height / headlineH);
+
+        const isMobile = this.width <= 640;
+        const isTablet = this.width > 640 && this.width <= 1024;
+
+        ctx.fillStyle = '#ededeb';
+        let fontSize = isMobile ? 28 : (isTablet ? 48 : 68);
+        ctx.font = `300 ${fontSize}px 'Newsreader', ui-serif, Georgia, serif`;
+
+        // Check widest line on mobile / tablet to guarantee no clipping
+        const maxAvailW = this.width - (isMobile ? 32 : 64);
+        while (ctx.measureText("Transformo dados, design e IA em").width > maxAvailW && fontSize > 18) {
+          fontSize -= 1;
+          ctx.font = `300 ${fontSize}px 'Newsreader', ui-serif, Georgia, serif`;
+        }
+
+        ctx.textBaseline = 'middle';
+
+        // Target bot height in pixels on screen
+        let targetBotPx = 200;
+        if (isMobile) targetBotPx = Math.min(100, this.width * 0.25);
+        else if (isTablet) targetBotPx = 200 * 0.70;
+        else if (this.width <= 1440) targetBotPx = 200 * 0.80;
+
+        // Vertical step with guaranteed clearance for halo and antenna
+        const botClearanceStep = (targetBotPx * 0.55) + (fontSize * 0.6) + (isMobile ? 18 : 26);
+        const startY = (headlineH / 2) - botClearanceStep;
+
+        if (isMobile) {
+          // On mobile phones: clean vertical distribution above and below the bot to eliminate clipping
+          ctx.textAlign = 'center';
+          // Above bot:
+          ctx.fillText("Transformo dados, design e IA em", headlineW / 2, startY);
+          // Below bot:
+          ctx.fillText("ferramentas reais, funcionais,", headlineW / 2, (headlineH / 2) + botClearanceStep * 0.85);
+          ctx.fillText("do protótipo ao deploy.", headlineW / 2, (headlineH / 2) + botClearanceStep * 0.85 + fontSize * 1.25);
+
+          // Subline 32px below
+          ctx.font = "500 11px 'Geist', sans-serif";
+          ctx.fillText("Estudante de Ciência de Dados · Designer", headlineW / 2, (headlineH / 2) + botClearanceStep * 0.85 + fontSize * 1.25 + 32);
+        } else {
+          // On desktop & tablet: aperture framing
+          const botGapPx = Math.max(140, targetBotPx * 0.95);
+
+          ctx.textAlign = 'center';
+          ctx.fillText("Transformo dados, design e IA em", headlineW / 2, startY);
+
+          ctx.textAlign = 'right';
+          ctx.fillText("ferramentas", (headlineW / 2) - (botGapPx / 2), headlineH / 2);
+
+          ctx.textAlign = 'left';
+          ctx.fillText("reais, funcionais,", (headlineW / 2) + (botGapPx / 2), headlineH / 2);
+
+          ctx.textAlign = 'center';
+          ctx.fillText("do protótipo ao deploy.", headlineW / 2, startY + 2 * botClearanceStep);
+
+          const subFontSize = isTablet ? 12 : 14;
+          ctx.font = `500 ${subFontSize}px 'Geist', sans-serif`;
+          ctx.fillText("Estudante de Ciência de Dados  ·  Designer", headlineW / 2, startY + 2 * botClearanceStep + 52);
+        }
+
+        const tex = new THREE.CanvasTexture(canvas);
+        tex.colorSpace = THREE.SRGBColorSpace;
+        const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true });
+        const mesh = new THREE.Mesh(new THREE.PlaneGeometry(this.textPx(headlineW), this.textPx(headlineH)), mat);
+        mesh.position.set(0, 0, 0);
+        this.textGroup.add(mesh);
+        this.headlineMesh = mesh;
+      }
+
+      buildStops() {
+        this.stopsGroup = new THREE.Group();
+        this.textGroup.add(this.stopsGroup);
+        this.stops = [];
+        this.allTrackLines = [];
+
+        const stopsData = [
+          {
+            pos: 'top',
+            heading: 'Perfil',
+            lines: [
+              { text: 'Estudante de Ciência de Dados e designer.', font: '300 22px Newsreader, serif', color: '#ededeb', step: 29 },
+              { text: 'Uso IA para construir produtos de ponta a ponta.', font: '300 22px Newsreader, serif', color: '#ededeb', step: 29 }
+            ]
+          },
+          {
+            pos: 'bottom',
+            heading: 'Construo com IA',
+            lines: [
+              { text: 'Dashboards com IA', font: '400 18px Newsreader, serif', color: '#ededeb', step: 25 },
+              { text: 'Copilotos de IA generativa', font: '400 18px Newsreader, serif', color: '#ededeb', step: 25 },
+              { text: 'Ferramentas publicadas', font: '400 18px Newsreader, serif', color: '#ededeb', step: 25 },
+              { text: 'Automação com n8n', font: '400 18px Newsreader, serif', color: '#ededeb', step: 25 }
+            ]
+          },
+          {
+            pos: 'top',
+            heading: 'Parte I  ·  Método',
+            lines: [
+              { text: 'I', font: '300 72px Newsreader, serif', color: '#ededeb', step: 105 },
+              { text: 'Um fluxo no n8n transforma uma ideia em um prompt', font: '300 19px Newsreader, serif', color: '#ededeb', step: 26 },
+              { text: 'otimizado para vibe coding.', font: '300 19px Newsreader, serif', color: '#ededeb', step: 26 }
+            ]
+          },
+          {
+            pos: 'bottom',
+            heading: '— UrbanPulse',
+            lines: [
+              { text: '“Menos ruído.', font: 'italic 300 40px Newsreader, serif', color: '#ededeb', step: 46 },
+              { text: 'Mais perspectiva.”', font: 'italic 300 40px Newsreader, serif', color: '#ededeb', step: 46 }
+            ]
+          },
+          {
+            pos: 'top',
+            heading: 'Em números',
+            lines: [
+              { text: '04  Projetos publicados', font: '400 18px Geist, sans-serif', color: '#ededeb', step: 27 },
+              { text: '03  Com IA generativa', font: '400 18px Geist, sans-serif', color: '#ededeb', step: 27 },
+              { text: '96.478  Pedidos analisados', font: '400 18px Geist, sans-serif', color: '#ededeb', step: 27 },
+              { text: '27  UFs analisadas', font: '400 18px Geist, sans-serif', color: '#ededeb', step: 27 }
+            ]
+          },
+          {
+            pos: 'bottom',
+            heading: 'Design',
+            lines: [
+              { text: 'Formada em Design: interfaces com identidade', font: '300 22px Newsreader, serif', color: '#ededeb', step: 29 },
+              { text: 'própria, tipografia e acessibilidade WCAG 2.1 AA.', font: '300 22px Newsreader, serif', color: '#ededeb', step: 29 }
+            ]
+          },
+          {
+            pos: 'top',
+            heading: 'Parte II  ·  Dados',
+            lines: [
+              { text: 'II', font: '300 72px Newsreader, serif', color: '#ededeb', step: 105 },
+              { text: 'Dados viram decisão: KPIs, simuladores what-if e', font: '300 19px Newsreader, serif', color: '#ededeb', step: 26 },
+              { text: 'diagnósticos em linguagem natural.', font: '300 19px Newsreader, serif', color: '#ededeb', step: 26 }
+            ]
+          },
+          {
+            pos: 'bottom',
+            heading: 'Stack',
+            lines: [
+              { text: 'React e Vite', font: '400 18px Newsreader, serif', color: '#ededeb', step: 25 },
+              { text: 'Node.js e Express', font: '400 18px Newsreader, serif', color: '#ededeb', step: 25 },
+              { text: 'Tailwind CSS e Recharts', font: '400 18px Newsreader, serif', color: '#ededeb', step: 25 },
+              { text: 'Gemini API', font: '400 18px Newsreader, serif', color: '#ededeb', step: 25 },
+              { text: 'Vercel e Render', font: '400 18px Newsreader, serif', color: '#ededeb', step: 25 }
+            ]
+          },
+          {
+            pos: 'top',
+            heading: '— Cardápio Copiloto',
+            lines: [
+              { text: '“A sugestão é do Copiloto,', font: 'italic 300 32px Newsreader, serif', color: '#ededeb', step: 38 },
+              { text: 'a decisão é sua.”', font: 'italic 300 32px Newsreader, serif', color: '#ededeb', step: 38 }
+            ]
+          },
+          {
+            pos: 'bottom',
+            heading: 'Contato',
+            lines: [
+              { text: 'LinkedIn →', font: '300 22px Newsreader, serif', color: '#ededeb', step: 32, isLink: true, url: 'https://www.linkedin.com/in/bruna-kury/' },
+              { text: 'Ver todos os projetos →', font: '300 22px Newsreader, serif', color: '#ededeb', step: 32, isRoute: true, route: 'projects' },
+              { text: 'Portfólio demonstrativo de estudos e projetos', font: '300 22px Newsreader, serif', color: '#8a8a88', step: 32 }
+            ]
+          }
+        ];
+
+        // The track starts half a viewport plus 250px (120px on phones) to the right of the headline
+        let currX = (this.width / 2) + (this.width <= 640 ? 120 : 250);
+        let maxLastBlockW = 200;
+
+        const measureCanvas = document.createElement('canvas');
+        const measureCtx = measureCanvas.getContext('2d');
+        const gapPx = this.width <= 640 ? 70 : 85;
+
+        // Block max width adapted to screen
+        const maxBlockW = Math.min(this.width - 56, this.width <= 640 ? 280 : 380);
+
+        stopsData.forEach((stop, stopIdx) => {
+          const isTop = stop.pos === 'top';
+          const headingLine = { text: stop.heading, font: '500 12px Geist, sans-serif', color: '#8a8a88', step: 28 };
+          
+          const rawLines = [headingLine];
+          stop.lines.forEach(l => {
+            const wrapped = this.wrapTextToLines(l.text, l.font, maxBlockW);
+            wrapped.forEach((wrappedText, wIdx) => {
+              rawLines.push({
+                text: wrappedText,
+                font: l.font,
+                color: l.color,
+                step: l.step,
+                isLink: (wIdx === 0 ? l.isLink : false),
+                isRoute: (wIdx === 0 ? l.isRoute : false),
+                url: l.url,
+                route: l.route
+              });
+            });
+          });
+
+          const stopObj = {
+            stopIdx,
+            isTop,
+            lines: []
+          };
+
+          let maxLineW = 100;
+          const createdLines = [];
+
+          rawLines.forEach((l, lIdx) => {
+            measureCtx.font = l.font;
+            const textMeasured = Math.ceil(measureCtx.measureText(l.text).width);
+            if (textMeasured > maxLineW) maxLineW = textMeasured;
+
+            const textW = textMeasured + 16;
+            const textH = Math.ceil(l.step + 10);
+
+            const canvas = document.createElement('canvas');
+            canvas.width = textW * 2;
+            canvas.height = textH * 2;
+            const ctx = canvas.getContext('2d');
+            ctx.scale(2, 2);
+
+            ctx.fillStyle = l.color;
+            ctx.font = l.font;
+            ctx.textBaseline = 'middle';
+            ctx.textAlign = 'left';
+            ctx.fillText(l.text, 8, textH / 2);
+
+            const tex = new THREE.CanvasTexture(canvas);
+            tex.colorSpace = THREE.SRGBColorSpace;
+            const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true });
+            const lineMesh = new THREE.Mesh(new THREE.PlaneGeometry(this.textPx(textW), this.textPx(textH)), mat);
+
+            const lineItem = {
+              mesh: lineMesh,
+              text: l.text,
+              isTop,
+              stopIdx,
+              lineIdx: lIdx,
+              step: l.step,
+              widthPx: textW,
+              heightPx: textH,
+              widthWorld: this.textPx(textW),
+              halfWidthWorld: this.textPx(textW / 2),
+              halfHeightWorld: this.textPx(textH / 2),
+              restingX: currX,
+              restingYWorld: 0,
+              shift: 0,
+              isLink: l.isLink,
+              isRoute: l.isRoute,
+              url: l.url,
+              route: l.route
+            };
+
+            this.stopsGroup.add(lineMesh);
+            createdLines.push(lineItem);
+            this.allTrackLines.push(lineItem);
+          });
+
+          // Calculate accurate resting Y positions preserving spacing
+          const N = createdLines.length;
+          if (isTop) {
+            // Line N-1 (bottommost) lower edge is gapPx above centre
+            createdLines[N - 1].restingYWorld = this.textPx(gapPx) + createdLines[N - 1].halfHeightWorld;
+            for (let i = N - 2; i >= 0; i--) {
+              const cur = createdLines[i];
+              const below = createdLines[i + 1];
+              let marginPx = 8;
+              if (cur.text === 'I' || cur.text === 'II') {
+                marginPx = 36;
+              } else if (below.text === 'I' || below.text === 'II') {
+                marginPx = 18;
+              }
+              const sep = cur.halfHeightWorld + below.halfHeightWorld + this.textPx(marginPx);
+              cur.restingYWorld = below.restingYWorld + sep;
+            }
+          } else {
+            // Line 0 (topmost) upper edge is gapPx below centre
+            createdLines[0].restingYWorld = -this.textPx(gapPx) - createdLines[0].halfHeightWorld;
+            for (let i = 1; i < N; i++) {
+              const prev = createdLines[i - 1];
+              const cur = createdLines[i];
+              let marginPx = 8;
+              if (prev.lineIdx === 0) {
+                marginPx = 14;
+              }
+              const sep = prev.halfHeightWorld + cur.halfHeightWorld + this.textPx(marginPx);
+              cur.restingYWorld = prev.restingYWorld - sep;
+            }
+          }
+
+          stopObj.lines = createdLines;
+          this.stops.push(stopObj);
+
+          maxLastBlockW = maxLineW;
+          const advance = Math.max(0.62 * maxLineW, this.width <= 640 ? 150 : 200) + (this.width <= 640 ? 60 : 90);
+          currX += advance;
+        });
+
+        this.trackEnd = currX + maxLastBlockW;
+        this.trackL = (this.trackEnd + (this.width <= 640 ? 140 : 260)) + (this.width / 2);
+        this.trackOffset = 0;
+        this.targetTrackOffset = 0;
+        this.trackVelocity = 0;
+      }
+      setupInteractions() {
+        this.raycaster = new THREE.Raycaster();
+        this.pointer = new THREE.Vector2();
+
+        window.addEventListener('pointermove', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          this.lastInputTime = performance.now();
+          if (this.isSleeping) this.wakeUp();
+
+          this.pointer.x = (e.clientX / this.width) * 2 - 1;
+          this.pointer.y = -(e.clientY / this.height) * 2 + 1;
+
+          // Bot rotation target follow
+          const dx = e.clientX - this.width / 2;
+          const dy = e.clientY - this.height / 2;
+
+          this.botTargetRot.x = Math.max(-0.62, Math.min(0.62, dy / (this.height / 2)));
+          this.botTargetRot.y = Math.max(-0.59, Math.min(0.59, dx / (this.width / 2)));
+          this.botTargetRot.z = 0.2 * (dx / (this.width / 2));
+
+          // Raycast bot for hover glow
+          this.raycaster.setFromCamera(this.pointer, this.camera);
+          const intersects = this.raycaster.intersectObjects(this.botGroup.children);
+          if (intersects.length > 0) {
+            this.botUniforms.uHoverPoint.value.copy(intersects[0].point);
+            this.isHoveringBot = true;
+          } else {
+            this.isHoveringBot = false;
+          }
+
+          // Raycast track links
+          const lineHits = this.raycaster.intersectObjects(this.allTrackLines.map(l => l.mesh));
+          let hoveringLink = false;
+          if (lineHits.length > 0) {
+            const hitMesh = lineHits[0].object;
+            const line = this.allTrackLines.find(l => l.mesh === hitMesh);
+            if (line && (line.isLink || line.isRoute)) {
+              hoveringLink = true;
+              document.body.style.cursor = 'pointer';
+              gsap.to(line.mesh.material, { opacity: 0.5, duration: 0.55 });
+              this.activeLinkLine = line;
+            }
+          }
+          if (!hoveringLink) {
+            if (this.activeLinkLine) {
+              gsap.to(this.activeLinkLine.mesh.material, { opacity: 1.0, duration: 0.55 });
+              this.activeLinkLine = null;
+            }
+            if (intersects.length > 0) {
+              document.body.style.cursor = 'pointer';
+            } else {
+              document.body.style.cursor = 'default';
+            }
+          }
+        });
+
+        // Click handler
+        window.addEventListener('click', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          this.lastInputTime = performance.now();
+          if (this.isSleeping) this.wakeUp();
+
+          this.raycaster.setFromCamera(this.pointer, this.camera);
+          const intersects = this.raycaster.intersectObjects(this.botGroup.children);
+          if (intersects.length > 0) {
+            this.fireBotClick();
+            return;
+          }
+
+          const lineHits = this.raycaster.intersectObjects(this.allTrackLines.map(l => l.mesh));
+          if (lineHits.length > 0) {
+            const hitMesh = lineHits[0].object;
+            const line = this.allTrackLines.find(l => l.mesh === hitMesh);
+            if (line) {
+              if (line.isLink && line.url) {
+                window.open(line.url, '_blank', 'noopener');
+              } else if (line.isRoute && line.route) {
+                window.location.hash = '#' + line.route;
+              }
+            }
+          }
+        });
+
+        // Track horizontal scrolling with wheel & touch
+        window.addEventListener('wheel', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          this.lastInputTime = performance.now();
+          if (this.isSleeping) this.wakeUp();
+
+          const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+          this.targetTrackOffset += delta * 1.5;
+
+          const hint = document.getElementById('about-hint');
+          if (hint) gsap.to(hint, { opacity: 0, duration: 0.5 });
+        }, { passive: true });
+
+        let touchStartX = 0;
+        let lastTouchX = 0;
+        window.addEventListener('touchstart', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          this.lastInputTime = performance.now();
+          if (this.isSleeping) this.wakeUp();
+
+          touchStartX = e.touches[0].clientX;
+          lastTouchX = touchStartX;
+          this.trackVelocity = 0;
+        }, { passive: true });
+
+        window.addEventListener('touchmove', (e) => {
+          if (!this.container.classList.contains('active')) return;
+          const dx = e.touches[0].clientX - lastTouchX;
+          lastTouchX = e.touches[0].clientX;
+          this.targetTrackOffset -= dx * 1.8;
+          this.trackVelocity = -dx * 1.8;
+
+          const hint = document.getElementById('about-hint');
+          if (hint) gsap.to(hint, { opacity: 0, duration: 0.5 });
+        }, { passive: true });
+      }
+
+      wakeUp() {
+        this.isSleeping = false;
+        gsap.to([this.leftEye.scale, this.rightEye.scale], { y: 1.0, duration: 0.1 });
+        gsap.to(this, { floatSpeed: 1.0, floatAmplitude: 1.0, duration: 0.8 });
+        this.headShake();
+      }
+
+      onResize() {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+        this.camera.aspect = this.width / this.height;
+        this.camera.updateProjectionMatrix();
+
+        this.renderer.setSize(this.width, this.height);
+        this.sceneRenderTarget.setSize(this.width * Math.min(window.devicePixelRatio, 2), this.height * Math.min(window.devicePixelRatio, 2));
+        this.discMat.uniforms.uResolution.value.set(this.width, this.height);
+
+        this.calcBotScale();
+
+        this.visTextH = 2 * 21 * Math.tan((45 / 2) * Math.PI / 180);
+        this.textPx = (px) => px * (this.visTextH / this.height);
+
+        let ovalFactor = 1.0;
+        if (this.width <= 640) ovalFactor = 0.7875;
+        this.ovalRx = 3.4 * ovalFactor;
+        this.ovalRy = 4.0543 * ovalFactor;
+
+        // Rebuild text elements for the new window size
+        if (this.textGroup) {
+          while (this.textGroup.children.length > 0) {
+            this.textGroup.remove(this.textGroup.children[0]);
+          }
+          this.buildHeadline();
+          this.buildStops();
+        }
+      }
+
+      start() {
+        this.active = true;
+        this.animate();
+      }
+
+      stop() {
+        this.active = false;
+        if (this.rafId) cancelAnimationFrame(this.rafId);
+      }
+
+      animate() {
+        if (!this.active) return;
+        this.rafId = requestAnimationFrame(() => this.animate());
+
+        const dt = 0.016;
+        const time = performance.now() * 0.001;
+        this.botUniforms.uTime.value = time;
+
+        // Sleep detection after 30s of inactivity (desktop)
+        if (this.width > 640 && !this.isSleeping && this.botUniforms.uReveal.value >= 0.8) {
+          if (performance.now() - this.lastInputTime > 30000) {
+            this.isSleeping = true;
+            gsap.to([this.leftEye.scale, this.rightEye.scale], { y: 0.2, duration: 1.1, ease: 'power2.inOut' });
+            gsap.to(this.botTargetRot, { x: 0.42, y: 0, z: 0.12, duration: 1.4 });
+            gsap.to(this, { floatSpeed: 0.35, floatAmplitude: 1.6, duration: 1.6 });
+          }
+        }
+
+        // Halo spin
+        if (this.halo) this.halo.rotation.z += 0.35 * dt;
+
+        // Hover glow factor
+        if (this.isHoveringBot) {
+          this.botUniforms.uHoverFactor.value += (1.0 - this.botUniforms.uHoverFactor.value) * 0.1;
+        } else {
+          this.botUniforms.uHoverFactor.value += (0.0 - this.botUniforms.uHoverFactor.value) * 0.05;
+        }
+
+        // Bot rotation ease
+        if (!this.hitReactionActive) {
+          const easeFactor = 1 - Math.pow(1 - 0.08, 60 * dt);
+          this.botRot.x += (this.botTargetRot.x - this.botRot.x) * easeFactor;
+          this.botRot.y += (this.botTargetRot.y - this.botRot.y) * easeFactor;
+          this.botRot.z += (this.botTargetRot.z - this.botRot.z) * easeFactor;
+          this.botGroup.rotation.set(this.botRot.x, this.botRot.y, this.botRot.z);
+        }
+
+        // Float motion
+        this.floatPhase += dt * 1.5 * this.floatSpeed;
+        const floatY = Math.sin(this.floatPhase) * 0.2 * this.floatAmplitude * this.botUniforms.uReveal.value;
+        this.botGroup.position.y = floatY;
+
+        // Track horizontal scrolling ease with wrap loop
+        this.trackVelocity *= 0.95;
+        this.targetTrackOffset += this.trackVelocity;
+        this.trackOffset += (this.targetTrackOffset - this.trackOffset) * 0.12;
+
+        // Animate headline with track so it loops seamlessly
+        if (this.headlineMesh) {
+          let headlinePixelX = 0 - this.trackOffset;
+          headlinePixelX = ((headlinePixelX + this.trackL / 2) % this.trackL + this.trackL) % this.trackL - this.trackL / 2;
+          this.headlineMesh.position.x = this.textPx(headlinePixelX);
+        }
+
+        // Magnetic make-space: oval keep-out zone
+        this.stops.forEach(stop => {
+          const isTop = stop.isTop;
+
+          // Position all lines horizontally first
+          stop.lines.forEach(line => {
+            let linePixelX = line.restingX - this.trackOffset;
+            linePixelX = ((linePixelX + this.trackL / 2) % this.trackL + this.trackL) % this.trackL - this.trackL / 2;
+            const leftX = this.textPx(linePixelX);
+            line.mesh.position.x = leftX + line.halfWidthWorld;
+            line.currentLeftX = leftX;
+            line.currentRightX = leftX + line.widthWorld;
+          });
+
+          if (isTop) {
+            // Process from bottommost line (nearest to bot) outward to line 0
+            let innerNeed = 0;
+            for (let i = stop.lines.length - 1; i >= 0; i--) {
+              const line = stop.lines[i];
+              const k = (stop.lines.length - 1) - i;
+
+              let d = 0;
+              if (line.currentLeftX <= 0 && line.currentRightX >= 0) {
+                d = 0;
+              } else {
+                d = Math.min(Math.abs(line.currentLeftX), Math.abs(line.currentRightX));
+              }
+
+              let lineNeed = 0;
+              if (d < this.ovalRx) {
+                const h = this.ovalRy * Math.sqrt(Math.max(0, 1 - Math.pow(d / this.ovalRx, 2))) + this.ovalPadding;
+                const lowerEdge = line.restingYWorld - line.halfHeightWorld;
+                if (lowerEdge < h) {
+                  lineNeed = h - lowerEdge;
+                }
+              }
+
+              const neededShift = Math.max(lineNeed, innerNeed);
+              innerNeed = neededShift;
+
+              const easeRate = Math.max(0.1, 0.14 - 0.012 * k);
+              line.shift += (neededShift - line.shift) * easeRate;
+              line.mesh.position.y = line.restingYWorld + line.shift;
+            }
+          } else {
+            // Process from topmost line (nearest to bot) outward to line N-1
+            let innerNeed = 0;
+            for (let i = 0; i < stop.lines.length; i++) {
+              const line = stop.lines[i];
+              const k = i;
+
+              let d = 0;
+              if (line.currentLeftX <= 0 && line.currentRightX >= 0) {
+                d = 0;
+              } else {
+                d = Math.min(Math.abs(line.currentLeftX), Math.abs(line.currentRightX));
+              }
+
+              let lineNeed = 0;
+              if (d < this.ovalRx) {
+                const h = this.ovalRy * Math.sqrt(Math.max(0, 1 - Math.pow(d / this.ovalRx, 2))) + this.ovalPadding;
+                const upperEdge = line.restingYWorld + line.halfHeightWorld;
+                if (upperEdge > -h) {
+                  lineNeed = upperEdge - (-h);
+                }
+              }
+
+              const neededShift = Math.max(lineNeed, innerNeed);
+              innerNeed = neededShift;
+
+              const easeRate = Math.max(0.1, 0.14 - 0.012 * k);
+              line.shift += (neededShift - line.shift) * easeRate;
+              line.mesh.position.y = line.restingYWorld - line.shift;
+            }
+          }
+        });
+
+        // 1st pass: If lens disc is active, render scene without bot & disc to sceneRenderTarget
+        if (this.lensDisc.visible) {
+          this.botGroup.visible = false;
+          this.lensDisc.visible = false;
+          this.renderer.setRenderTarget(this.sceneRenderTarget);
+          this.renderer.render(this.scene, this.camera);
+          this.discMat.uniforms.tScene.value = this.sceneRenderTarget.texture;
+          this.botGroup.visible = true;
+          this.lensDisc.visible = true;
+        }
+
+        // Final pass
+        this.renderer.setRenderTarget(null);
+        this.renderer.render(this.scene, this.camera);
+      }
+    }
+
+    // Initialize application on load
+    document.fonts.ready.then(() => {
+      const initialHash = window.location.hash.replace('#', '') || 'gallery';
+      switchView(initialHash);
+    });
+
+  </script>
+</body>
 </html>
